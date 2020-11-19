@@ -195,3 +195,13 @@ img {
     width: 100%;
   }
 }
+/* Copyright */
+.grid-for-copyright {
+  display: inline-grid;
+  grid-template-rows: auto auto;
+}
+
+.item-2 {
+  width: 100%;
+  text-align: center;
+}
