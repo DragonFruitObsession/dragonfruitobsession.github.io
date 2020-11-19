@@ -120,3 +120,16 @@ img {
   height: 60%;
   border: 2px solid white;
 }
+
+
+/* Copyright */
+.grid-for-copyright {
+  display: inline-grid;
+  grid-template-rows: auto auto;
+}
+
+.item-2 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
