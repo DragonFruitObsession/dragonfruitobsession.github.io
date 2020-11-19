@@ -41,7 +41,7 @@ body {
   color: white;
   text-decoration: none;
   float: left;
-  width: 25%;
+  width: 100%;
   background-color: dimgrey;
 }
 
@@ -66,12 +66,10 @@ body {
   background-color: mediumvioletred;
 }
 
-
 /* Change to equal size navs */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 768px) {
   .nav {
-    width: 100%;
-    text-align: none;
+    width: 25%;
   }
 }
 
@@ -237,8 +235,16 @@ hr {
 
   .flowers {
     width: 50%;
-    
-    
+    float: left;
+  }
+
+  .fruit {
+    width: 50%;
+    float: left;
+  }
+}
+
+
 
 /* Copyright */
 .grid-for-copyright {
@@ -249,14 +255,5 @@ hr {
 .item-2 {
   width: 100%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 10px;
-}
-    float: left;
-  }
-
-  .fruit {
-    width: 50%;
-    float: left;
-  }
+  padding: 20px;
 }
