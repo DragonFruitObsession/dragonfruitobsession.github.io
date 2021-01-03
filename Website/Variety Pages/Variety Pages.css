@@ -178,6 +178,13 @@ display: none;
   grid-row-end: 3;
 }
 
+.description {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
 .plant-picture {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -213,6 +220,12 @@ display: none;
   grid-row-end: 4;
 }
 
+.fruit-top {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 
 .plant-picture {
   grid-column-start: 1;
