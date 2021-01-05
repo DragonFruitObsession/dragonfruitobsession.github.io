@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
 .title a {
   display: inline-block;
   width: 100%;
@@ -17,37 +22,11 @@
   color: dimgrey;
 }
 
-/*Gets rid of dot points*/
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  background-color: #f2f2f2;
-}
-
 .forward {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
-  line-height: 100%;
 }
-
-
-/* Styling the title and body */
-.title a {
-  display: inline-block;
-  width: 100%;
-  padding: 14px 16px;
-  text-align: center;
-  font-family: 'Sansita Swashed', cursive;
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-}
-
 
 /* Styling the navbar */
 .navbar {
@@ -101,7 +80,7 @@ body {
   border: 1px solid black;
 }
 
-/* Change to equal size navs */
+/* Change to stacked navs */
 @media screen and (max-width: 800px) {
   .nav {
     width: 100%;
@@ -112,24 +91,49 @@ body {
     width: 100%;
     margin-bottom: 5%;
   }
-
 }
 
+/* Styling the database */
+.variety-database {
+  display: inline-grid;
+  grid-template-rows: auto auto;
+}
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 4%;
+  margin-right: 4%;
+}
 
-/* Content */
+.column {
+  width: 23%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.content:hover {
+  background-color: lightpink;
+  padding: 5px;
+}
+
+/*Gets rid of dot points*/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .content {
   background-color: white;
   padding: 5px;
-  line-height: 100%;
 }
 
-
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
 .coming {
@@ -148,70 +152,22 @@ body {
    padding-top: 37.5%;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 8px -16px;
-  text-align: center;
-  margin-left: 4%;
-  margin-right: 4%;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row>.column {
-  padding: 0.5%;
-}
-
-/* Create four equal columns that float next to each other */
-.column {
-  width: 23%;
-  float: left;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-
-
-/* Clear floats after rows */
-.gallery:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.content:hover {
-  background-color: lightpink;
-  padding: 5px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Two-column database instead of four */
 @media screen and (max-width: 900px) {
   .column {
     width: 48%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* One-colummn database instead of two */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
-/* Copyright */
-.grid-for-copyright {
-  display: inline-grid;
-  grid-template-rows: auto auto;
-}
 
-.item-2 {
+.copyright {
   width: 100%;
   text-align: center;
+  padding-bottom: 1%;
 }
