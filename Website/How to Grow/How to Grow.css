@@ -53,6 +53,7 @@ body {
 }
 
 
+
 .nav:link {
   background-color: dimgrey;
 }
@@ -63,6 +64,7 @@ body {
 
 .active {
   background-color: mediumvioletred;
+  margin-bottom: 20px;
 }
 
 
@@ -124,4 +126,54 @@ img {
   width: 100%;
   text-align: center;
   padding: 20px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.pollen-guide {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.pollen {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 2.5%;
+  column-gap: 2.5%;
+}
+
+.step {
+  width: 23%;
+  padding-bottom: 2.5%;
+}
+
+.step-label {
+  padding-bottom: 1%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.instruction {
+  padding-top: 1%;
+}
+
+/* Two-column instructions instead of four */
+@media screen and (max-width: 900px) {
+  .step {
+    width: 48%;
+  }
+}
+
+/* One-colummn instructions instead of two */
+@media screen and (max-width: 600px) {
+  .step {
+    width: 100%;
+  }
 }
