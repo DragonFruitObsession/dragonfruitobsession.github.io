@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-  
+
 <head>
-  
+
   <link rel="canonical" href="https://dragonfruitobsession.github.io">
   <title>Dragon Fruit Obsession - Home Page</title>
-  <link href="DF style.css" type="text/css" rel="stylesheet">    
+  <link href="DF style.css" type="text/css" rel="stylesheet">
+  <link href="Navigation.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,12 +14,26 @@
   <meta name="google-site-verification" content="lVZXIHXAGd22ixEFNJ3prUAIITYPMrXyjwdm47ble48">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <h1 class="title"><a href="index.html">Dragon Fruit Obsession</a></h1>
-  <div class="navbar">
-    <a href="index.html" class="nav" id="active">HOME</a>
-    <a href="Website/Variety Analysis/Variety Analysis.html" class="nav">VARIETY ANALYSIS</a>
-    <a href="Website/How to Grow/How to Grow.html" class="nav">HOW TO GROW</a>
-    <div class="surround"><input id="searchbar" onkeyup="search_animal()" type="text" name="search" class="search" type="text" placeholder="&#xF002; SEARCH VARIETIES..." style="font-family:Arial, FontAwesome" /></div>
-  </div>
+
+
+    <nav class="navbar">
+
+      <a href="index.html" class="nav" id="active">HOME</a>
+      <a href="Website/Variety Analysis/Variety Analysis.html" class="nav">VARIETY ANALYSIS</a>
+      <div class="dropdown nav">
+        <button class="dropbtn">HOW TO GROW <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="Website/How to Grow/Basic Requirements/Basic Requirements.html">Basic Requirements</a>
+          <a href="Website/How to Grow/Propagation/Propagation.html">Propagation</a>
+          <a href="Website/How to Grow/Pollination and Harvest/Pollination and Harvest.html">Pollination and Harvest</a>
+        </div>
+      </div>
+      <a href="Website/Origami/Origami.html" class="nav">ORIGAMI</a>
+
+    <div class="surround"><input id="searchbar" onkeyup="search_dragonfruit()" type="text" name="search" class="search" type="text" placeholder="&#xF002; SEARCH VARIETIES..." style="font-family:Arial, FontAwesome" /></div>
+
+  </nav>
+
 </head>
 
 <body>
@@ -138,12 +153,11 @@
 
   <!-- Copyright -->
   <div class="copyright">
-    <small>&copy; Copyright 2020, Dragon Fruit Obsession</small>
-    <div class="space"></div>
+    <small>&copy; Copyright 2020 - 2021, Dragon Fruit Obsession</small>
   </div>
 
-  <!-- Script for searchbar -->
-  <script src="DF Java.js"></script>
+  <!-- Load Javascript -->
+  <script src="Search.js"></script>
 
 </body>
 
