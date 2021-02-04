@@ -3,20 +3,32 @@
 <title>Dragon Fruit Variety Analysis - Dragon Fruit Obsession</title>
 <link href="Variety Analysis.css" type="text/css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../../Navigation.css" type="text/css" rel="stylesheet">
 
 <head>
   <meta name="description" content="Analysing each of my varieties when I get some more data (fruits)."
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <div class="header">
-    <h2 class="title"><a href="https://dragonfruitobsession.github.io/index.html">Dragon Fruit Obsession</a></h2>
+    <h2 class="title"><a href="../../index.html">Dragon Fruit Obsession</a></h2>
   </div>
   <div class="header">
 
-    <ul class="navbar">
-      <li><a href="https://dragonfruitobsession.github.io/index.html" class="nav">HOME</a></li>
-      <li><a href="Variety Analysis.html" class="nav active">VARIETY ANALYSIS</a></li>
-      <li><a href="../How to Grow/How to Grow.html" class="nav">HOW TO GROW</a></li>
-    </ul>
+    <nav class="navbar">
+
+      <a href="../../index.html" class="nav">HOME</a>
+      <a href="../../Website/Variety Analysis/Variety Analysis.html" class="nav" id="active">VARIETY ANALYSIS</a>
+      <div class="dropdown nav">
+        <button class="dropbtn">HOW TO GROW <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="../../Website/How to Grow/Basic Requirements/Basic Requirements.html">Basic Requirements</a>
+          <a href="../../Website/How to Grow/Propagation/Propagation.html">Propagation</a>
+          <a href="../../Website/How to Grow/Pollination and Harvest/Pollination and Harvest.html">Pollination and Harvest</a>
+        </div>
+      </div>
+      <a href="../../Website/Origami/Origami.html" class="nav">ORIGAMI</a>
+
+    </nav>
 
   </div>
 </head>
@@ -25,7 +37,10 @@
 
 <body>
   <p class="coming">Need some more varieties to fruit first! Soon, hopefully.</p>
-  <small>&copy; Copyright 2020 - 2021, Dragon Fruit Obsession</small>
+
+  <div class="copyright">
+    <small>&copy; Copyright 2020 - 2021, Dragon Fruit Obsession</small>
+  </div>
 </body>
 
 </html>
