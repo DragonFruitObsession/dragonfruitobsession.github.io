@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.image-right {
+  width: 300px;
+  float: right;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+}
+
+.image-left {
+  width: 300px;
+  float: left;
+  padding-right: 5%;
+  padding-bottom: 2.5%;
+}
+
+
+h2 {
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+img {
+  border: 2px solid white;
+  width: 100%;
+}
+
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
