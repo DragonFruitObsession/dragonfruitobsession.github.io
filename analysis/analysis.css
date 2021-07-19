@@ -22,11 +22,36 @@
 .image-grid {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.5%;
+  grid-row-gap: 2.5%;
   width: 50%;
   float: right;
-  padding: 2.5% 0% 2.5% 2.5%;
+  padding: 2.5%;
 }
 
 .figure {
   width: 100%;
+}
+
+/* overrides default values of <figure> */
+figure {
+  margin: 0%;
+}
+
+/* making it mobile friendly */
+@media screen and (max-width: 900px) {
+  .image-grid {
+    width: 100%;
+    padding: 2.5% 0% 2.5% 0%;s
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .img-1 {
+    width: 100%;
+    padding: 2.5% 0% 2.5% 0%;
+  }
 }
