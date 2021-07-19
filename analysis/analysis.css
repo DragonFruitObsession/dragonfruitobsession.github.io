@@ -19,6 +19,10 @@
   float: left;
 }
 
+.mr-block {
+  display: block;
+}
+
 .image-grid {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
@@ -40,18 +44,25 @@ figure {
 
 /* making it mobile friendly */
 @media screen and (max-width: 900px) {
+  figure {
+    padding: 2.5% 0% 2.5% 0%;
+  }
+
   .image-grid {
     width: 100%;
-    padding: 2.5% 0% 2.5% 0%;s
+    padding: 2.5% 0% 2.5% 0%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
-  .img-1 {
-    width: 100%;
-    padding: 2.5% 0% 2.5% 0%;
-  }
+
+.image-grid {
+  display: inline-block;
+  grid-template-columns: 1fr;
+}
+
+.img-1 {
+  width: 100%;
+  padding: 2.5% 0% 2.5% 0%;
+}
 }
