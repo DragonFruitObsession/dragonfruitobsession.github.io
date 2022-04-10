@@ -32,8 +32,38 @@
     <a href="origami/origami.html" class="nav">ORIGAMI</a>
     <div class="surround"><input id="searchbar" onkeyup="search_dragonfruit()" type="text" name="search" class="search" type="text" placeholder="&#xF002; SEARCH VARIETIES..." style="font-family:Arial, FontAwesome" /></div>
   </nav>
-</head>
 
+
+  <div class="fancy-pants">
+    <div class="dropdown2">
+      <button class="dropbtn2" onclick="myFunction1()">Display by <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content2">
+        <button class="sick-dropdown btn openclose1" onclick="fruitInside()">Fruit (inside)</button>
+        <button class="sick-dropdown btn openclose1" onclick="fruitOutside()">Fruit (outside)</button>
+        <button class="sick-dropdown btn openclose1" onclick="fruitFlowers()">Flowers</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown2">
+    <button class="dropbtn2" onclick="myFunction2()">Filter by <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content2  big-boy">
+      <button class="sick-dropdown a" onclick="filterSelection('column')">All</button>
+      <button class="sick-dropdown a" onclick="filterSelection('White-Flesh')">White Flesh</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Red-Flesh')">Red Flesh</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Pink-Flesh')">Pink Flesh</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Purple-Flesh')">Purple Flesh</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Pink-Skin')">Pink Skin</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Yellow-Skin')">Yellow Skin</button>
+      <button class="sick-dropdown a" onclick="filterSelection('White-Flower')">White Flower</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Coloured-Flower')">Coloured Flower</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Self-Fertile')">Self-Fertile</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Self-Sterile')">Self-Sterile</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Paul-Thomson')">Paul Thomson</button>
+    </div>
+  </div>
+
+</head>
 
 <body>
 
@@ -49,43 +79,36 @@
   <div class="variety-database">
 
     <ul class="gallery">
-      <li class="column">
+
+
+      <li class="column filterDiv White-Flesh Pink-Skin White-Flower Self-Fertile">
         <div class="content">
           <a href="varieties/vietnam-white-oval.html">
-            <img src="varieties/Variety Photos/Vietnam White (Oval)/Vietnam White (Oval) - Fruit 4.jpg" alt="Vietnam White (Oval) dragon fruit halved">
+            <img id="theImage1" src="varieties/Variety Photos/Vietnam White/Vietnam White - Fruit 4.jpg" alt="Vietnam White dragon fruit halved">
           </a>
-          <p>Vietnam White (Oval)<br><i>Hylocereus undatus</i></p>
+          <p>Vietnam White<br><i>Hylocereus undatus</i></p>
         </div>
       </li>
 
-      <li class="column">
+      <li class="column filterDiv Red-Flesh Pink-Skin White-Flower Self-Fertile">
         <div class="content">
           <a href="varieties/common-red.html">
-            <img src="varieties/Variety Photos/Common Red/Common Red - Fruit 4.jpg" alt="Common Red dragon fruit halved">
+            <img id="theImage2" src="varieties/Variety Photos/Common Red/Common Red - Fruit 4.jpg" alt="Common Red dragon fruit halved">
           </a>
           <p>Common Red<br><i>Hylocereus polyrhizus</i></p>
         </div>
       </li>
 
-      <li class="column">
+      <li class="column filterDiv Red-Flesh Pink-Skin White-Flower Self-Fertile">
         <div class="content">
-          <a href="varieties/vietnam-white-round.html">
-            <img src="varieties/Variety Photos/Vietnam White (Round)/Vietnam White (Round) - Fruit 4.jpg" alt="Vietnam White (Round) dragon fruit halved">
+          <a href="varieties/jade-red.html">
+            <img id="theImage3" src="varieties/Variety Photos/Jade Red/Jade Red - Fruit 4.jpg" alt="Common Red dragon fruit halved">
           </a>
-          <p>Vietnam White (Round)<br><i>Hylocereus undatus</i></p>
+          <p>Jade Red<br><i>H. costaricensis X Epiphylum cv.</i></p>
         </div>
       </li>
 
-      <li class="column">
-        <div class="content">
-          <div class="coming">
-            <div class="inside">Picture coming soon (hopefully)</div>
-          </div>
-          <p>Isis Gold<br><i>Hylocereus undatus</i></p>
-        </div>
-      </li>
-
-      <li class="column">
+      <li class="column filterDiv White-Flesh Yellow-Skin White-Flower Self-Fertile">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
@@ -94,25 +117,16 @@
         </div>
       </li>
 
-      <li class="column">
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Jade Red<br><i>H.costaricensis X Epiphylum cv.</i></p>
+          <p>Delight<br><i>H. undatus X H. guatemalensis</i></p>
         </div>
       </li>
 
-      <li class="column">
-        <div class="content">
-          <div class="coming">
-            <div class="inside">Picture coming soon (hopefully)</div>
-          </div>
-          <p>Delight<br><i>H.undatus X H.guatemalensis</i></p>
-        </div>
-      </li>
-
-      <li class="column">
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
@@ -121,7 +135,7 @@
         </div>
       </li>
 
-      <li class="column">
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
@@ -130,7 +144,7 @@
         </div>
       </li>
 
-      <li class="column">
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
@@ -139,7 +153,7 @@
         </div>
       </li>
 
-      <li class="column">
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Fertile">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
@@ -148,16 +162,26 @@
         </div>
       </li>
 
-      <li class="column">
+
+      <li class="column filterDiv White-Flesh Yellow-Skin White-Flower Self-Fertile">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Purple Haze<br><i>H.guatamalensis X H.undatus</i></p>
+          <p>Palora<br><i>Hylocereus megalanthus</i></p>
         </div>
       </li>
 
-      <li class="column">
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Purple Haze<br><i>H. guatamalensis X H. undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Red-Flesh Pink-Skin  White-Flower Self-Fertile Paul-Thomson">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
@@ -165,17 +189,17 @@
           <p>Sugar Dragon<br><i>Hylocereus guatamalensis X</i></p>
         </div>
       </li>
-      
-            <li class="column">
+
+      <li class="column filterDiv White-Flesh Pink-Skin Coloured-Flower Self-Sterile">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Connie Mayer<br><i>H.stenopterus X H.guatamalensis</i></p>
+          <p>Connie Mayer<br><i>H. stenopterus X H. guatamalensis</i></p>
         </div>
       </li>
-      
-            <li class="column">
+
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
         <div class="content">
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
@@ -184,12 +208,39 @@
         </div>
       </li>
 
+      <li class="column filterDiv White-Flesh Yellow-Skin White-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Isis Gold<br><i>Hylocereus undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Physical Graffiti<br><i>H. guatamalensis X H. undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Namibia Orange<br><i>?</i></p>
+        </div>
+      </li>
+
     </ul>
   </div>
 
   <!-- Copyright -->
   <div class="copyright">
-    <small>&copy; Copyright 2020 - 2021, Dragon Fruit Obsession</small>
+    <small>&copy; Copyright 2020 - <script>document.write(new Date().getFullYear())</script>, Dragon Fruit Obsession</small>
   </div>
 
   <!-- Load Javascript -->
