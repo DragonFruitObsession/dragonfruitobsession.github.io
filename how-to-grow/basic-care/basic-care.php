@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dragon Fruit Basic Care - Dragon Fruit Obsession</title>
+  <link href="basic-care.css" type="text/css" rel="stylesheet">
+  <meta name="description" content="An explanation of all the different requirements dragon fruit plants need to grow and thrive.">
+  <?php include "../../dfnavigation.php";?>
+</head>
+
+
+<body>
+  <h2 class="header">Dragon Fruit Basic Care</h2>
+  <div class="container">
+    <p>This page covers the basics in growing dragon fruit: position, soil, watering, fertilising, and mulching. For other aspects of growing dragon fruit, such as propagation, trellising, and pollination, see the drop-down menu above.
+
+    <h3><u>Position</u></h3>
+
+    <div class="image-right">
+      <img src="Basic Care Photos/Position.jpg" alt="Picture of dragon fruit plants blooming under a shade cloth.">
+      <figcaption>I use 30 percent shade cloth on the balcony.</figcaption>
+    </div>
+
+    Dragon fruit plants are a tropical cactus, so prefer a full-sun environment, especially when it is not the peak of summer. This will allow your plants to put on maximum biomass for the fruiting season, and ultimately extend the fruiting season
+    both ways, as well as ensuring they remain healthy over the off season. However, if your climate gets very hot like where I live (up to 40+ degrees Celsius), some of the branches may turn yellow in extreme heat, which can lead to mush-like burns
+    of rotting flesh which really hamper production. If this happens, cut away the rotting flesh immediately before it spreads and clean with a paper towel (see <a href="https://www.youtube.com/watch?v=Nf82GzM83Kc" target="_blank">how to do
+      this</a>) to stop the plant from wasting its energy trying to heal the burns. Dragon fruit branches can also shrivel badly in extreme heat, which is usually due to not enough water and/or lack of bud thinning. I like to stick to the old
+    saying, “Three is a crowd,” and keep a maximum of two buds per branch. Otherwise, the branch simply won’t have enough nutrients to properly develop the fruit, and you will end up with a whole heap of small fruit and a terribly malnourished branch
+    that may take until next season to recover.</p>
+    <p>
+      Of course, some varieties are more sensitive than others. In my experience, Yellow Dragon and <a href="../../varieties/common-red.php">Common Red</a> suffer the most from sun damage, while Delight and <a
+        href="../../varieties/vietnam-white.php">Vietnam White</a> struggle the least, though they are by no means immune. One option is to
+      grow them in pots (see <a href="https://www.youtube.com/watch?v=zfM2D5r3H40" target="_blank">Spicy Exotics’ trellis design</a>), and simply move them in the heat of the summer. If you are planting your dragon fruit plants in the ground, think
+      about installing some 30 percent shade cloth for the summer, although make sure it does not actually touch the plants, as this could also lead to burning. I wouldn’t go too much higher than 30 percent as this could hinder production. Finally,
+      if
+      your area only occasionally experiences extreme height, you can simply put up some temporary umbrellas, or throw some hessian over your plants. I like hessian because it lets more light in than umbrellas, and can simply be pegged to the plant,
+      as
+      the natural fibres don’t heat up like shade cloth in the sun.</p>
+    <p>
+
+      Dragon fruit plants also struggle when it gets cold, with branches often taking on a purple tinge. If conditions persist, this can turn into a mushy rot, which looks identical to the rot that occurs in extreme heat as outlined above. If your
+      area receives
+      ample rainfall, it is a good idea to shelter your plants similarly to what you would do in summer during such spells, to reduce rotting flesh and the spread of fungus. If fungus spreads (red dots will appear on branches), spray immediately with
+      copper fungicide to get on top of it before the summer. I have heard that watering during cold spells, especially frosts, can reduce the damage to your plants as water holds heat for the roots, though dragon fruit do not tolerate frost well.
+    </p>
+
+
+    <h3><u>Soil</u></h3>
+    <p>Dragon fruit plants thrive in a well-draining, highly organic soil. If you are growing them in pots, get the biggest pot you can find (see <a href="https://www.youtube.com/watch?v=zfM2D5r3H40" target="_blank">Spicy Exotics’ trellis
+        design</a>)
+      and make sure there are plenty of holes in the bottom for drainage. I
+      use a 50-50 mix of regular cactus soil and compost, which seems to work well. I have found potting mix is not the best for dragon fruit, as it holds too much water.</p>
+
+    <div class="image-left">
+      <img src="Basic Care Photos/Mulch.jpg" alt="Picture of the soil and mulch in my Common Red dragon fruit pot.">
+      <figcaption>I use lots of organic matter, including lupin mulch.</figcaption>
+    </div>
+
+    <h3><u>Water</u></h3>
+    <p>Coming from a tropical environment, dragon fruit plants are unlike most other cacti in that they need regular water. In the heat of summer, water well every day to help get the plants through extreme weather and support new branches and buds.
+      During the cooler winter months, only water if there is a long period without rain. In between these periods I like to water every other day to ensure my plants are not sitting in water, but to keep them healthy. Some growers have noted a
+      period of dryness in spring, alongside <a href="../trellising-and-pruning/trellising-and-pruning.php">bud tipping</a>, can help induce buds, so that could be worth investigating.</p>
+
+    <h3><u>Fertilising and mulching</u></h3>
+    <p>Dragon fruit plants grow very fast so require large amounts of fertiliser. To help improve the soil quality and promote growth and budding, I like to use a combination of dry and liquid fertilisers. The dry fertilisers slowly leach nutrients
+      into the soil, giving a long and continuous supply of nutrients to your plants, while the liquid fertilisers provide a quick dose of nutrients to stimulate growth and budding, whilst aiding the bacteria in the soil. In early spring, I like to
+      promote growth by using a combination of the following dry fertilisers: compost, chicken fertiliser, and blood and bone, supplementing this with liquid fish fertiliser. I usually fertilise every fortnight or so, alternating between these
+      fertilisers so that different nutrients can be obtained, though they all contain predominantly nitrogen, which promotes growth. When it gets closer to summer, I drop the growth fertilisers down to about once a month, and begin applying dry
+      potash once a month, with liquid potash in between. This is because potash contains potassium, which is essential for the development of flower buds. To mulch, I usually use either straw mulch, or lupin mulch, as it breaks down over time
+      supplying extra nutrients to my plants whilst reducing water loss.</p>
+  </div>
+
+  <?php include "../../footer.php";?>
+
+</body>
+
+
+<script src="../../../Dropdown.js"></script>
+
+</html>

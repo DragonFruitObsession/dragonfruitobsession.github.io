@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <head>
+    <title>How to Propagate Dragon Fruit - Dragon Fruit Obsession</title>
+    <link href="propagation.css" type="text/css" rel="stylesheet">
+    <meta name="description" content="A page explaining the different ways to propagate dragon fruit plants.">
+    <?php include "../../dfnavigation.php";?>
+  </head>
+
+<body>
+
+  <div class="content">
+    <h2>Propagation</h2>
+    <p>This page covers how dragon fruit plants are propagated: from cuttings, seeds, grafts, and tissue culture. For other aspects of growing dragon fruit, such as basic care, trellising, and pollination, see the drop-down menu above.
+
+
+    <div class="image-right">
+      <img src="Propagation Photos/Young Cuttings.jpg" alt="Picture of young dragon fruit cuttings.">
+      <figcaption>Starting dragon fruit off in pots will get them growing fast.</figcaption>
+    </div>
+    <h3><u>Cuttings</u></h3>
+
+    <p>Dragon fruit plants grow best from cuttings. Look for thick, healthy, mature stems and let them cure in the shade for a week, to prevent rot. I like to chop at the node (points between two branches) if possible as this will be least likely to
+      rot. However, if this is not possible or I want to chop longer branches into multiple cuttings, I like to do a “flesh to stem cut” (see <a href="https://www.youtube.com/watch?v=uAZ-cfYflDQ" target="_blank">how</a>) which effectively creates a
+      node. Do this immediately and let cure for a week with your other
+      cuttings. For beginners, it is helpful to take note of which way the branch was growing in relation to the base of the plant, imagining the flow of nutrients and water delivered to this branch, as cuttings will only root if planted in the same
+      direction. As a general rule, plant with the spikes facing upwards. Cuttings should be planted a maximum of a few centimetres deep in a mixture of compost and free draining soil, to minimise risk of rot. Some growers, especially in very wet
+      areas, simply place the cuttings on top of the soil to root, to reduce the chances of rot. I like to establish my cuttings in small pots (see picture) before planting out. Water well, and don’t let the soil dry out completely before watering
+      again. From here, train
+      any new growth up a stake (I tie the new growth to a bamboo stick for support), and wait for the plant to be around half a metre high before planting into the final location.
+    <p>I like to root dragon fruit cuttings in summer, as the roots form faster and there is less chance of rot. However, if for any reason (such as the loss of branches in a storm) you want to root cuttings in the winter, there a few things you can
+      do. Consider applying root hormone and placing the cuttings in a bed of coconut coir or similar, and place these over a heat mat to stimulate growth. If you really want to get serious, purchase a grow light and do this all indoors, ready to
+      plant out in Spring.</p>
+    <h3><u>Seedlings</u></h3>
+    <p>I would advise against growing dragon fruits from seeds in most cases, as they grow incredibly slowly, and it may be upwards of five years before you get any fruit. Further, not all varieties are true to type, so after all that waiting
+      you may end up with something not worth keeping. Of course, there is the possibility of ending up with something better than you started with, which is precisely the reason seedlings are used for dragon fruit hybridisation. This is the main
+      reason dragon fruit enthusiasts grow seedlings. One variety is <a href="../pollination-and-harvest/pollination-and-harvest.php">cross-pollinated</a> by another, and the seeds from the best fruit are planted out in large numbers. The weak
+      seedlings are pruned away, leaving only the strongest seedlings
+      which can then be grown out in full or grafted (more on that below), and the fruit evaluated. This is a great way to get varieties suited to your climate, as the genetic variance introduced by <a
+        href="../pollination-and-harvest/pollination-and-harvest.php">cross-pollination</a> (seeds will be genetically
+      different) means the most adept plants will be the strongest, and all weaker plants will be removed. The same concept can be applied to varieties true to type (typically <a
+        href="../pollination-and-harvest/pollination-and-harvest.php">self-pollinating</a> varieties), in which the seeds will be more genetically
+      similar to their parents, but slight alterations could give more heat-tolerant plants for example. Of course, some people enjoy the challenge of growing fruit trees (or cacti, in this case) from seeds, in which case sow as you would vegetables.
+    </p>
+    <div class="image-left">
+      <img src="Propagation Photos/Horizontal Graft.jpg" alt="Picture of young dragon fruit cuttings.">
+      <figcaption>Grafting can get slow varieties moving.</figcaption>
+    </div>
+    <h3><u>Grafting</u></h3>
+    <p>For weaker varieties, such as Yellow Dragon, it can be beneficial to graft onto a strong rootstock such as Isis Gold or <a href="../../varieties/vietnam-white.php">Vietnam White</a>, as its own root system is not very strong. Grafting is also
+      a great way to get many plants from a small
+      amount of biomass, as grafting can work for very small pieces of material (see <a href="https://www.youtube.com/watch?v=grPMsZSEX40" target="_blank">V-cut grafting</a>). Some people have even successfully grafted pieces of stem left on store
+      bought dragon fruit, allowing them to clone commercial varieties such
+      as Palora. Another use for grafting is to speed up the growth of seedlings, especially in the development of new varieties. I won’t go into too much detail on the methods for grafting, as there is an entire YouTube channel dedicated and named
+      after it. I’ll list some of his most useful grafting tutorials below:
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=rA-j2ei7Mpc" target="_blank">Horizontal graft</a> (simplest graft you can do)</li>
+      <li><a href="https://www.youtube.com/watch?v=grPMsZSEX40" target="_blank">V-cut graft</a> (when you have next to no material or want your material to spread very far)</li>
+      <li><a href="https://www.youtube.com/watch?v=hsYMCdJmwds" target="_blank">Clone graft</a> (how to clone the plant from shop fruits)</li>
+      <li><a href="https://www.youtube.com/watch?v=yqyyhYvnMrY" target="_blank">Seedling graft</a> (great for hybridisation)</li>
+    </ul>
+    </p>
+    <h3><u>Tissue Culture</u></h3>
+
+
+    <p>
+      There is (at least) one more method of propagating dragon fruit out there, known as tissue culture, however it can only be done with specialised equipment. Tissue cultured dragon fruit plants are grown from tiny pieces of material (known as the explant),
+      sometimes even a single cell, in a carefully controlled medium filled with nutrients and various growth stimulants. I know very little about the whole process, so will leave the reader to do their own research if they are interested. I do know
+      that tissue cultured plants from varieties such as Edgar’s Baby can be purchased from nurseries in the US, so this is not as futuristic as you might think.
+    </p>
+    <?php include "../../footer.php";?>
+</body>
+
+</html>

@@ -1,16 +1,41 @@
-function search_dragonfruit() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('column');
+function myFunction1() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchbar1');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
 
-    for (i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="list-item";
-        }
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("p")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
     }
+  }
+}
+
+function myFunction2() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchbar2');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("p")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
 }
 
 
@@ -49,16 +74,28 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("droppy1");
+var btns = btnContainer.getElementsByClassName("btn1");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active1");
+    current[0].className = current[0].className.replace(" active1", "");
+    this.className += " active1";
   });
 }
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("droppy2");
+var btns = btnContainer.getElementsByClassName("btn2");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active2");
+    current[0].className = current[0].className.replace(" active2", "");
+    this.className += " active2";
+  });
+}
+
 
 
 
