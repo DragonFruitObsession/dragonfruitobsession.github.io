@@ -1,1 +1,10 @@
 ErrorDocument 400 /404.html
+
+RewriteRule ^analysis/data\-analysis\.html$ /analysis/data-analysis.php? [L,R=301]
+RewriteRule ^varieties/vietnam\-white\.html$ /varieties/vietnam-white.php? [L,R=301]
+RewriteRule ^varieties/common\-red\.html$ /varieties/common-red.php? [L,R=301]
+RewriteRule ^varieties/jade\-red\.html$ /varieties/jade-red.php? [L,R=301]
+RewriteRule ^how\-to\-grow/basic\-care/basic\-care\.html$ /how-to-grow/basic-care/basic-care.php? [L,R=301]
+RewriteRule ^how\-to\-grow/propagation/propagation\.html$ /how-to-grow/propagation/propagation.php? [L,R=301]
+RewriteRule ^how\-to\-grow/trellising/trellising\.html$ /how-to-grow/trellising/trellising.php? [L,R=301]
+RewriteRule ^how\-to\-grow/pollination\-and\-harvest/pollination\-and\-harvest\.html$ /how-to-grow/pollination-and-harvest/pollination-and-harvest.php? [L,R=301]
