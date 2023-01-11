@@ -2,23 +2,15 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 800px) {
+  .nav {
+    width: 25% !important;
+  }
+}
+
 .content {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2.5%;
-  padding-top: 2.5%;
+  padding: 5% 5% 2.5% 5%;
 }
-
-.blank {
-  background-color: white;
-  height: 92%;
-}
-
-
-#analysis {
-  background-color: mediumvioletred;
-}
-
 
 .img-1 {
   width: 300px;
@@ -27,64 +19,50 @@
   float: left;
 }
 
-#graphs-2022 {
-  display: none;
+.mr-block {
+  display: block;
 }
 
 .image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.5%;
+  grid-row-gap: 2.5%;
+  width: 50%;
+  float: right;
+  padding: 2.5%;
 }
 
 .figure {
-  min-width: 0;
-  width: 49%;
+  width: 100%;
 }
-
-.buttons {
-  width: 50%;
-  float: right;
-  padding: 2.5% 2.5% 0% 2.5%;
-}
-
-.image-grid :nth-child(1) { order: 1; }
-.image-grid :nth-child(2) { order: 3; }
-.image-grid :nth-child(3) { order: 2; }
-.image-grid :nth-child(4) { order: 4; }
-.image-grid :nth-child(5) { order: 5; }
-.image-grid :nth-child(6) { order: 7; }
-.image-grid :nth-child(7) { order: 6; }
-.image-grid :nth-child(8) { order: 8; }
-
-
-@media screen and (max-width: 700px) {
-  .buttons {
-    width: 100%;
-    padding: 2.5% 0% 2.5% 0%;
-  }
-  .figure {
-    width: 100%;
-  }
-
-  .image-grid :nth-child(1) { order: 1; }
-  .image-grid :nth-child(2) { order: 2; }
-  .image-grid :nth-child(3) { order: 3; }
-  .image-grid :nth-child(4) { order: 4; }
-  .image-grid :nth-child(5) { order: 5; }
-  .image-grid :nth-child(6) { order: 6; }
-  .image-grid :nth-child(7) { order: 7; }
-  .image-grid :nth-child(8) { order: 8; }
-
-  .img-1 {
-    width: 100%;
-    padding: 0% 0% 5% 0%;
-  }
-}
-
-
 
 /* overrides default values of <figure> */
 figure {
   margin: 0%;
+}
+
+/* making it mobile friendly */
+@media screen and (max-width: 900px) {
+  figure {
+    padding: 2.5% 0% 2.5% 0%;
+  }
+
+  .image-grid {
+    width: 100%;
+    padding: 2.5% 0% 2.5% 0%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+.image-grid {
+  display: inline-block;
+  grid-template-columns: 1fr;
+}
+
+.img-1 {
+  width: 100%;
+  padding: 2.5% 0% 2.5% 0%;
+}
 }

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <link rel="canonical" href="https://dragonfruitobsession.github.io">
+  <title>Home Page - Dragon Fruit Obsession</title>
+  <link href="DF style.css" type="text/css" rel="stylesheet">
+  <link href="navigation.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="description" content="A dragon fruit website describing different varieties, everything you need to know to grow them, and more.">
+  <meta name="google-site-verification" content="lVZXIHXAGd22ixEFNJ3prUAIITYPMrXyjwdm47ble48">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- navigation menu -->
+  <h1 class="title"><a href="/">Dragon Fruit Obsession</a></h1>
+  <nav class="navbar">
+    <a href="/" class="nav" id="active">HOME</a>
+    <a href="analysis/data-analysis.html" class="nav">DATA ANALYSIS</a>
+
+    <div class="dropdown nav">
+      <button class="dropbtn">HOW TO GROW <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="how-to-grow/basic-care/basic-care.html">Basic Care</a>
+        <a href="how-to-grow/propagation/propagation.html">Propagation</a>
+        <a href="how-to-grow/trellising/trellising.html">Trellising</a>
+        <a href="how-to-grow/pollination-and-harvest/pollination-and-harvest.html">Pollination and Harvest</a>
+      </div>
+    </div>
+
+    <a href="origami/origami.html" class="nav">ORIGAMI</a>
+    <div class="surround"><input id="searchbar" onkeyup="search_dragonfruit()" type="text" name="search" class="search" type="text" placeholder="&#xF002; SEARCH VARIETIES..." style="font-family:Arial, FontAwesome" /></div>
+  </nav>
+
+
+  <div class="fancy-pants">
+    <div class="dropdown2">
+      <button class="dropbtn2" onclick="myFunction1()">Display by <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content2">
+        <button class="sick-dropdown btn openclose1" onclick="fruitInside()">Flesh (default)</button>
+        <button class="sick-dropdown btn openclose1" onclick="fruitOutside()">Skin</button>
+        <button class="sick-dropdown btn openclose1" onclick="fruitFlowers()">Flowers</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown2">
+    <button class="dropbtn2" onclick="myFunction2()">Filter by <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content2  big-boy">
+      <button class="sick-dropdown a" onclick="filterSelection('column')">All (default)</button>
+      <button class="sick-dropdown a" onclick="filterSelection('White-Flesh')">White Flesh</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Red-Flesh')">Red Flesh</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Pink-Flesh')">Pink Flesh</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Purple-Flesh')">Purple Flesh</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Pink-Skin')">Pink Skin</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Yellow-Skin')">Yellow Skin</button>
+      <button class="sick-dropdown a" onclick="filterSelection('White-Flower')">White Flower</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Coloured-Flower')">Coloured Flower</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Self-Fertile')">Self-Fertile</button>
+      <button class="sick-dropdown b" onclick="filterSelection('Self-Sterile')">Self-Sterile</button>
+      <button class="sick-dropdown a" onclick="filterSelection('Paul-Thomson')">Paul Thomson</button>
+    </div>
+  </div>
+
+</head>
+
+<body>
+
+  <div class="forward">
+    <h2>Forward</h2>
+    <p>I, the creator of this website, am a hobbyist dragon fruit grower based in Perth, Western Australia. I created this website to document my progress in growing dragon fruit by displaying and analysing each of my varieties in an elegant and
+      efficient
+      manner. Some of the varieties I identified through guesswork and may not be accurate, while other unknown varieties I named myself. I hope my analysis of each variety is useful to fellow growers and that this website can expand and become
+      better with time. Click on the pictures below for more information on each variety.</p>
+  </div>
+
+  <!-- database of dragon fruit varieties -->
+  <div class="variety-database">
+
+    <ul class="gallery">
+
+
+      <li class="column filterDiv White-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <a href="varieties/vietnam-white.html">
+            <img id="theImage1" src="varieties/Variety Photos/Vietnam White/Vietnam White - Fruit 4.jpg" alt="Vietnam White dragon fruit halved">
+          </a>
+          <p>Vietnam White<br><i>Hylocereus undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Red-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <a href="varieties/common-red.html">
+            <img id="theImage2" src="varieties/Variety Photos/Common Red/Common Red - Fruit 4.jpg" alt="Common Red dragon fruit halved">
+          </a>
+          <p>Common Red<br><i>Hylocereus polyrhizus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Red-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <a href="varieties/jade-red.html">
+            <img id="theImage3" src="varieties/Variety Photos/Jade Red/Jade Red - Fruit 4.jpg" alt="Common Red dragon fruit halved">
+          </a>
+          <p>Jade Red<br><i>H. costaricensis X Epiphylum cv.</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv White-Flesh Yellow-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Yellow Dragon<br><i>Selenicereus megalanthus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Delight<br><i>H. undatus X H. guatemalensis</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Pink Lemonade<br><i>Hylocereus undatus X</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Pink Panther<br><i>Hylocereus setaceus X</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>American Beauty<br><i>Hylocereus guatemalensis</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Malaysian Purple<br><i>Hylocereus setaceus X?</i></p>
+        </div>
+      </li>
+
+
+      <li class="column filterDiv White-Flesh Yellow-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Palora<br><i>Hylocereus megalanthus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Purple Haze<br><i>H. guatamalensis X H. undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Red-Flesh Pink-Skin  White-Flower Self-Fertile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Sugar Dragon<br><i>Hylocereus guatamalensis X</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv White-Flesh Pink-Skin Coloured-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Connie Mayer<br><i>H. stenopterus X H. guatamalensis</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Thomson G2<br><i>Hylocereus guatamalensis</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv White-Flesh Yellow-Skin White-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Isis Gold<br><i>Hylocereus undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Pink-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Physical Graffiti<br><i>H. guatamalensis X H. undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Namibia Orange<br><i>?</i></p>
+        </div>
+      </li>
+
+            <li class="column">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Palora<br><i>Hylocereus megalanthus</i></p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <small>&copy; Copyright 2020 - <script>document.write(new Date().getFullYear())</script>, Dragon Fruit Obsession</small>
+  </div>
+
+  <!-- Load Javascript -->
+  <script src="search.js"></script>
+
+</body>
+
+</html>
