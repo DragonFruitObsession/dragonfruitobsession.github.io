@@ -1,0 +1,81 @@
+---
+layout: default
+title: Analysis
+---
+
+<head>
+    <link href="analysis.css" type="text/css" rel="stylesheet">
+</head>
+<!-- jpg vs jpeg is important -->
+
+<body class="thebody" onresize="Tester()">
+  <div class="content">
+    <h2>Dragon Fruit Data Analysis</h2>
+    <p>The purpose of this page is to provide an insight into what makes dragon fruit plants start flowering and fruiting, as this is the main reason for growing them. Over the past few years, I have recorded every dragon fruit flower upon opening,
+      although it was not until the season of 2020/21 that I had enough flowers to really see any correlation between weather and flowering times. I chose the opening of dragon fruit flowers as the basis for my data, as dragon fruit flowers only open
+      once and for one night, so this can be measured with perfect accuracy, as opposed to buds or new growths which can easily be missed when too small and sometimes abort or get eaten by bugs. From bud to flower is about three weeks, so we need to
+      imagine the trend translated back by more than three weeks to determine the cause of initial budding. However, it is long known that plants can somewhat predict future weather, based of changes in the current weather, so there may be
+      correlations between weather conditions and flowering itself. Such changes in current weather are of most interest to me, as this could allow me to better care for my dragon fruits plants in relation to what is ahead, allowing me to maximise
+      production.</p>
+    <img src="Flower Graphs/Monthly Flowers.jpeg" alt="Graph of all monthly flowers" class="img-1">
+    <p>The graph to the left (or above, depending on your device) gives you a general impression of my fruiting season. I live in Perth, Western Australia, which is in the Southern hemisphere, so Winter goes from June to August with the Winter
+      Solstice on June 21, Spring from September to November, Summer from December to February with the Summer Solstice on December 21, and Autumn from March to May. During Winter, my dragon fruit plants grow very slowly, but do not have to face any
+      frost due to my location. However, cactus rust does seem to spread during this time. When it begins to warm up in Spring, my dragon fruit plants spring to life putting on lots of new growth before they begin fruit production in Summer. As you
+      can see, my earliest dragon fruit flowers occurred December and the latest in April, with the most flowers occurring during Summer. The hot weather seems to get rid of the cactus rust and many of the bugs that arrive in Spring, and the plants
+      appear much healthier so long as they are protected from the sun and are well-watered and fertilised. </p>
+    <p>Whatever the season, I cannot control the weather. However, I can control the amount of water, fertiliser, shading, and pruning I give them. Hopefully the following analysis provides some insight into the correlation between dragon fruit
+      flowering and the weather, so the factors we can change can be controlled accordingly to try and extend the dragon fruit season both ways. I will be focussing on temperature, solar exposure, and rainfall, after no correlation at all to moon
+      phases in the season of 2020/21. All weather data is taken from the <a href="http://www.bom.gov.au/climate/data-services/station-data.shtml" target="_blank">Australian Bureau of Meteorology Website<a>.</p>
+
+    <div class="buttons">
+      <button id="button-2021" onclick="AltImage21()">2020/21</button>
+      <button id="button-2022" onclick="AltImage22()">2021/22</button>
+
+      <div class="image-grid" id="graphs-2021" onresize="FixResizingIssue()">
+        <img src="Flower Graphs/2021/Flowers vs Temperature (2021).jpeg" alt="Flowers vs Temperature" class="figure">
+        <p class="figure">Figure 1</p>
+        <img src="Flower Graphs/2021/Flowers vs Solar Exposure (2021).jpeg" alt="Flowers vs Solar Exposure" class="figure">
+        <p class="figure">Figure 2</p>
+        <img src="Flower Graphs/2021/Flowers vs Rainfall (2021).jpeg" alt="Flowers vs Rainfall" class="figure">
+        <p class="figure">Figure 3</p>
+        <img src="Flower Graphs/2021/Flowers vs Moon Phases (2021).jpeg" alt="Flowers vs Moon Phases" class="figure">
+        <p class="figure">Figure 4</p>
+      </div>
+
+
+      <div class="image-grid" id="graphs-2022" onresize="FixResizingIssue()">
+        <img src="Flower Graphs/2022/Flowers vs Temperature (2022).jpeg" alt="Flowers vs Temperature" class="figure">
+        <p class="figure">Figure 1</p>
+        <img src="Flower Graphs/2022/Flowers vs Solar Exposure (2022).jpeg" alt="Flowers vs Solar Exposure" class="figure">
+        <p class="figure">Figure 2</p>
+        <img src="Flower Graphs/2022/Flowers vs Rainfall (2022).jpeg" alt="Flowers vs Rainfall" class="figure">
+        <p class="figure">Figure 3</p>
+        <div>No longer testing.</div>
+        <div>Figure 4</div>
+      </div>
+    </div>
+
+    <div>
+      <h3><u>Flowers vs Temperature (Figure 1)</u></h3>
+      <p>Other than more flowers during the warmer times of the year, there doesn’t appear to be a direct correlation between dragon fruit flowers and temperature. However, each peak in flowering seems to coincide with a drop in temperatures. This
+        makes sense, because flowers typically abort in extreme heat due to the high energy and water requirements that are needed to keep the plant alive during such times. This timing could be a way of limiting flower abortion and hence increasing
+        the chances of producing seeds, which is the purpose of the fruit in the first place. Further, flowers stay open longer in cooler temperatures, increasing the chance of pollination.</p>
+      <h3><u>Flowers vs Solar Exposure (Figure 2)</u></h3>
+      <p>There appears to be a consensus that dragon fruit flowers are linked to the amount of sunlight hours they receive each day, so much so that some farms put up lights to extend the growing season. I chose solar exposure because it measures the
+        amount of the sun’s energy that reaches the surface rather than sunlight hours which could prove inaccurate on cloudy days. In any case, there doesn’t appear to be a direct correlation between the two, however, the general trend of solar
+        exposure from high to low seems to support the successive flowering cycles. Like temperature, flowers seem to open during or just before drops in solar exposure, which are most likely for the same reasons.</p>
+      <h3><u>Flowers vs Rainfall (Figure 3)</u></h3>
+      <p>In the season of 2020/21, rainfall was the most promising of all factors tested, as it fit the flowering cycle almost perfectly in slight procession. This is probably due to similar reasons to temperature. The energy required to produce such
+        enormous blooms requires lots of water, so perhaps this is the plants’ way of making sure they survive the heat. The day or so lag can be explained by the need for dry weather when the flower is open, as excess water can wash away the pollen
+        making pollination harder, though they still often open when it’s raining in my experience. However, the season of 2021/22 was not so promising, mostly due to the lack of rainfall (compare the right-hand scale of the two graphs). For this
+        reason, I am not ruling rainfall out, and I look forward to analysing this trend in the coming years.</p>
+      <h3><u>Flowers vs Moon Phases (Figure 4)</u></h3>
+      <p>There seems to be some myth going around that dragon fruit flowers only open on a full moon, perhaps due to the increase in nocturnal pollinators. However, I think this idea stems from folklore rather than science, and after no obvious
+        correlation in the season of 2020/21, I have decided to discontinue this comparison.</p>
+      <h3><u>Conclusion</u></h3>
+      <p>Of course, I have only done the very basics in analysing the trends between dragon fruit flowering and weather conditions, and much of my observations are purely speculative. However, I do believe that weather plays some part in the
+        promotion of dragon fruit flower buds, as I often spot dragon fruit plants in the neighbourhood that flower on the same night as mine, which would not have received the same fertilising as my plants. If we can better understand how weather
+        conditions affect our plants, it will allow us to better care for them to suit such conditions, and ultimately lead to better production, and perhaps the creation of even better cultivars.</p>
+    </div>
+
+<script src="analysis.js"></script>
