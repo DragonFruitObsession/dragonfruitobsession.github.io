@@ -6,13 +6,17 @@
   display: none;
 }
 
+#home {
+  background-color: mediumvioletred;
+}
+
 /* Styling the database */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: -1%;
+  margin-right: -1%;
 }
 
 .column {
@@ -23,6 +27,11 @@
   margin-right: 1%;
 }
 
+.content:hover {
+  background-color: lightpink;
+  padding: 5px;
+}
+
 /*Gets rid of dot points*/
 ul {
   list-style-type: none;
@@ -31,10 +40,7 @@ ul {
 
 .content {
   background-color: white;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2.5%;
-  padding-top: 2.5%;
+  padding: 5px;
 }
 
 img {
@@ -203,10 +209,7 @@ img {
   display: none;
 }
 
-footer {
-  text-align: center;
-  margin-bottom: 8px;
-}
+
 
 /* Change to stacked navs */
 @media screen and (max-width: 800px) {

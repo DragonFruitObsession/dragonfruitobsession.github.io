@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  border: 2px solid white;
+}
+
+#how-to-grow {
+  background-color: mediumvioletred;
+}
+
+.wrap-image {
+  border: 2px solid white;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  padding: 2.5% 5% 0% 5%;
+}
+
+
+.image-right {
+  width: 300px;
+  float: right;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+}
+
+
+.pollen-guide {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.pollen {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 2.5%;
+  column-gap: 2.5%;
+}
+
+.step {
+  width: 23%;
+  padding-bottom: 2.5%;
+}
+
+.step-label {
+  padding-bottom: 1%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.instruction {
+  padding-top: 1%;
+}
+
+/* Two-column instructions instead of four */
+@media screen and (max-width: 900px) {
+  .step {
+    width: 48%;
+  }
+}
+
+/* One-colummn instructions instead of two */
+@media screen and (max-width: 600px) {
+  .step {
+    width: 100%;
+  }
+
+  .image-right {
+    width: 100%;
+    padding: 0% 0% 5% 0%;
+  }
+}

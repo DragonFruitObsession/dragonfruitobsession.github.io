@@ -1,0 +1,101 @@
+/* Styling the title (link to home page) */
+body {
+  margin: 0;
+  background-color: #f2f2f2; }
+
+.title a {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 16px;
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  color: black; }
+
+.title a:hover {
+  color: dimgrey; }
+
+/* Styling the navbar */
+.nav {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  float: left;
+  width: 25%;
+  background-color: dimgrey;
+  height: 50px;
+  line-height: 50px; }
+
+.navbar {
+  padding-bottom: 25px; }
+
+.dropdown .dropbtn {
+  font-size: medium;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+/* Styling elements inside the dropdown menu */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  line-height: 25px; }
+
+.dropdown-content a:hover {
+  background-color: #ddd; }
+
+/* Drop down on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.nav:link {
+  background-color: dimgrey; }
+
+.nav:hover {
+  background-color: mediumvioletred; }
+
+#active {
+  background-color: mediumvioletred; }
+
+/* Change to stacked navs */
+@media screen and (max-width: 800px) {
+  .nav {
+    width: 100%;
+    height: auto; }
+
+  .dropdown-content {
+    display: none;
+    width: 100%;
+    box-shadow: none;
+    position: static;
+    background-color: lightgrey; }
+
+  .dropdown-content a {
+    text-align: center; }
+
+  /* Fixed sidenav, full height */
+  .navbar {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-bottom: 200px; } }
+/* Copyright */
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px; }

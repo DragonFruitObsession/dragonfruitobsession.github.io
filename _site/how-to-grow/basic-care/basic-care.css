@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+#how-to-grow {
+  background-color: mediumvioletred;
+}
+
+.container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.image-right {
+  width: 300px;
+  float: right;
+  padding-left: 5%;
+  padding-bottom: 1.25%;
+}
+
+.image-left {
+  width: 300px;
+  float: left;
+  padding-right: 5%;
+  padding-bottom: 1.25%;
+}
+
+
+.header {
+  padding-left: 5%;
+  padding-top: 2.5%;
+}
+
+img {
+  border: 2px solid white;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 700px) {
+  .image-right,.image-left {
+    width: 100%;
+    padding: 0% 0% 5% 0%;
+  }
+}

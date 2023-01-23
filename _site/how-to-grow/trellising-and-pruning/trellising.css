@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+#how-to-grow {
+  background-color: mediumvioletred;
+}
+
+hr {
+  border: 1px solid darkgrey;
+  background-color: darkgrey;
+}
+
+.image-right {
+  width: 350px;
+  float: right;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+}
+
+.image-left {
+  width: 350px;
+  float: left;
+  padding-right: 5%;
+  padding-bottom: 2.5%;
+}
+
+img {
+  border: 2px solid white;
+  width: 100%;
+}
+
+.content {
+  padding: 2.5% 5% 0% 5%;
+}
+
+.indent {
+  padding-left: 5%;
+}
+
+@media screen and (max-width: 800px) {
+  .image-right,.image-left {
+    width: 250px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .image-right,.image-left {
+    width: 100%;
+    padding: 2.5% 0% 5% 0%;
+  }
+}
