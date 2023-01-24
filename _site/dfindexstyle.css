@@ -91,11 +91,6 @@ img {
   }
 }
 
-.content-stuff {
-  padding-top: 2.5%;
-}
-
-
 .forward {
   float: left;
   margin-left: 10%;
@@ -238,6 +233,6 @@ img {
 
   .mobileonly {
     display: block;
-    margin-top: -4px;
+    margin-top: -2.5%;
   }
 }
