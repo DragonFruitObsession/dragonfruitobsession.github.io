@@ -56,6 +56,13 @@ border: 2px solid white;
 float: left;
 }
 
+.fruit2 {
+width: 100%;
+height: auto;
+border: 2px solid white;
+float: left;
+}
+
 hr {
 border: 1px solid darkgrey;
 background-color: darkgrey;

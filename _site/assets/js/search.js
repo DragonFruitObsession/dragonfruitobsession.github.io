@@ -105,16 +105,25 @@ function fruitInside() {
   document.getElementById("theImage1").src = "varieties/Variety Photos/Vietnam White/Vietnam White - Fruit 4.jpg";
   document.getElementById("theImage2").src = "varieties/Variety Photos/Common Red/Common Red - Fruit 4.jpg";
   document.getElementById("theImage3").src = "varieties/Variety Photos/Jade Red/Jade Red - Fruit 4.jpg";
+  document.getElementById("theImage4").src = "varieties/Variety Photos/Malaysian Purple/Malaysian Purple - Fruit 4.jpg";
+  document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Fruit 4.jpg";
+  document.getElementById("theImage6").src = "varieties/Variety Photos/Delight/Delight - Fruit 4.jpg";
 }
 
 function fruitOutside() {
   document.getElementById("theImage1").src = "varieties/Variety Photos/Vietnam White/Vietnam White - Fruit 3.jpg";
   document.getElementById("theImage2").src = "varieties/Variety Photos/Common Red/Common Red - Fruit 3.jpg";
   document.getElementById("theImage3").src = "varieties/Variety Photos/Jade Red/Jade Red - Fruit 3.jpg";
+  document.getElementById("theImage4").src = "varieties/Variety Photos/Malaysian Purple/Malaysian Purple - Fruit 3.jpg";
+  document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Fruit 3.jpg";
+  document.getElementById("theImage6").src = "varieties/Variety Photos/Delight/Delight - Fruit 3.jpg";
 }
 
 function fruitFlowers() {
   document.getElementById("theImage1").src = "varieties/Variety Photos/Vietnam White/Vietnam White - Flower 3.jpg";
   document.getElementById("theImage2").src = "varieties/Variety Photos/Common Red/Common Red - Flower 3.jpg";
   document.getElementById("theImage3").src = "varieties/Variety Photos/Jade Red/Jade Red - Flower 3.jpg";
+  document.getElementById("theImage4").src = "varieties/Variety Photos/Malaysian Purple/Malaysian Purple - Flower 3.jpg";
+  document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Flower 3.jpg";
+  document.getElementById("theImage6").src = "varieties/Variety Photos/Delight/Delight - Flower 3.jpg";
 }
