@@ -2,6 +2,30 @@
   box-sizing: border-box;
 }
 
+.text {
+  padding: 0px;
+  margin: 0px;
+}
+.read-more-div {
+    position: relative;
+    line-height: 1.1em;
+    max-height: 5.5em;
+    overflow: hidden;
+    padding-right: 0.01%;
+    margin-top: 0%;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px;
+    text-decoration: none;
+    color: blue;
+    margin-bottom: 0px;
+    background-color: #f2f2f2;
+}
+
 .forwardmobile {
   display: none;
 }

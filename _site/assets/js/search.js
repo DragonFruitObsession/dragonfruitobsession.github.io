@@ -1,3 +1,22 @@
+// read read
+document.addEventListener('DOMContentLoaded', function() {
+    var content = document.querySelector('.read-more-div');
+    var readMore = document.querySelector('.read-more');
+
+    readMore.addEventListener('click', function(e) {
+        e.preventDefault();
+        content.classList.toggle('open');
+
+        if (content.classList.contains('open')) {
+            content.style.maxHeight = 'none';
+            readMore.textContent = 'read less';
+        } else {
+            content.style.maxHeight = '5.5em'; // Adjust to match your CSS max-height
+            readMore.textContent = '... read more';
+        }
+    });
+});
+
 function myFunction1() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
