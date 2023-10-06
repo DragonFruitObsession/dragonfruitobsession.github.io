@@ -13,5 +13,3 @@ exclude: # Files to exclude from production
   - COPYING.LESSER
   - README.md
   - Makefile
-
-permalink: pretty
