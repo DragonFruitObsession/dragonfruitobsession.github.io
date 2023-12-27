@@ -6,6 +6,11 @@
   padding: 0px;
   margin: 0px;
 }
+
+.read-more:hover {
+  cursor: default;
+}
+
 .read-more-div {
     position: relative;
     line-height: 1.1em;
