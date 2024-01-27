@@ -40,10 +40,11 @@
 
 <nav class="navbar">
   <a href="/" class="nav" id="home">HOME</a>
-  <a href="/analysis/data-analysis.html" class="nav" id=analysis>DATA ANALYSIS</a>
-  <div class="dropdown nav" id="how-to-grow">
-    <button class="dropbtn">HOW TO GROW <i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
+  <a href="/analysis/data-analysis.html" class="nav" id="analysis">DATA ANALYSIS</a>
+
+  <div class="dropdown nav" onclick="toggler1()" id="how-to-grow">
+    <button class="dropbtn dropdown outside1a">HOW TO GROW <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content outside1b" id="toggle-content1">
       <a href="/how-to-grow/basic-care/basic-care.html">Basic Care</a>
       <a href="/how-to-grow/propagation/propagation.html">Propagation</a>
       <a href="/how-to-grow/trellising-and-pruning/trellising-and-pruning.html">Trellising and Pruning</a>
@@ -51,8 +52,19 @@
     </div>
   </div>
 
-  <a href="/other-fruit/other-fruit.html" class="nav" id="other-fruit">OTHER FRUIT</a>
+
+  <div class="dropdown nav" onclick="toggler2()" id="more">
+    <button class="dropbtn dropdown">MORE <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content" id="toggle-content2">
+      <a href="/more/other-fruit/other-fruit.html">Other Fruit</a>
+      <a href="/more/recipes/recipes.html">Recipes</a>
+      <a href="/more/origami/origami.html">Origami</a>
+    </div>
+  </div>
 </nav>
+
+
+<script src="/assets/js/search.js"></script>
 
 
     <!-- Content -->
@@ -62,7 +74,7 @@
 
 <body>
   <div class="content">
-    <h2>Dragon Fruit Trellising</h2>
+    <h2>Trellising and Pruning</h2>
 
     <p>In order for your dragon fruit plants to reach full production, you must provide them with a support structure. This will allow the branches to hang down, stimulating budding and fruiting while allowing for ease of harvest. This page will
       cover the basic requirements for dragon fruit trellises, and the two main types: single pole trellises, and fence trellises. For other aspects of growing dragon fruit, such as basic care, propagation, and pollination, see the drop-down menu
@@ -123,7 +135,7 @@
     <br><b>4. Wooden top support</b>. This is only really suitable with a wooden pole and is probably not the best method as over-time it will rot. However, it can be a great starting place as it is very easy and quick to construct. Typically
     square in shape.</p><p>
       The following are links to some great single pole dragon fruit
-      trellis designs:
+      trellis designs:<br>
 
     <a href="https://www.youtube.com/watch?v=zfM2D5r3H40" target="_blank">Spicy Exotics' PVC Trellis</a>
     <br><a href="https://www.youtube.com/watch?v=vxL8f0IrkpM" target=_"blank">Grafting Dragon Fruit's Protected Wooden Trellis</a>

@@ -40,10 +40,11 @@
 
 <nav class="navbar">
   <a href="/" class="nav" id="home">HOME</a>
-  <a href="/analysis/data-analysis.html" class="nav" id=analysis>DATA ANALYSIS</a>
-  <div class="dropdown nav" id="how-to-grow">
-    <button class="dropbtn">HOW TO GROW <i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
+  <a href="/analysis/data-analysis.html" class="nav" id="analysis">DATA ANALYSIS</a>
+
+  <div class="dropdown nav" onclick="toggler1()" id="how-to-grow">
+    <button class="dropbtn dropdown outside1a">HOW TO GROW <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content outside1b" id="toggle-content1">
       <a href="/how-to-grow/basic-care/basic-care.html">Basic Care</a>
       <a href="/how-to-grow/propagation/propagation.html">Propagation</a>
       <a href="/how-to-grow/trellising-and-pruning/trellising-and-pruning.html">Trellising and Pruning</a>
@@ -51,8 +52,19 @@
     </div>
   </div>
 
-  <a href="/other-fruit/other-fruit.html" class="nav" id="other-fruit">OTHER FRUIT</a>
+
+  <div class="dropdown nav" onclick="toggler2()" id="more">
+    <button class="dropbtn dropdown">MORE <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content" id="toggle-content2">
+      <a href="/more/other-fruit/other-fruit.html">Other Fruit</a>
+      <a href="/more/recipes/recipes.html">Recipes</a>
+      <a href="/more/origami/origami.html">Origami</a>
+    </div>
+  </div>
 </nav>
+
+
+<script src="/assets/js/search.js"></script>
 
 
     <!-- Content -->
@@ -66,7 +78,7 @@
   <h2 class="forward">Forward</h2>
   <div class="surround notmobile"><input id="searchbar1" onkeyup="myFunction1()" type="text" name="search" class="search" type="text" placeholder="&#xF002; SEARCH VARIETIES..." style="font-family:Arial, FontAwesome" /></div>
 
-  <div class="dropdown2">
+  <div class="dropdown2" onclick="toggler3()">
     <button class="dropbtn2" id="righty">Filter by <i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content2  big-boy" id="droppy2">
       <button class="sick-dropdown btn2 active2 a" onclick="filterSelection('all')">All (default)</button>
@@ -84,7 +96,7 @@
     </div>
   </div>
 
-  <div class="dropdown2">
+  <div class="dropdown2" onclick="toggler4()">
     <button class="dropbtn2" onclick="myFunction1()" id="lefty">Display by <i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content2" id="droppy1">
       <button class="sick-dropdown btn1 openclose1 active1" onclick="fruitInside()">Flesh (default)</button>
@@ -99,20 +111,22 @@
   <h2 class="forwardmobile">Forward</h2>
 
   <div class="read-more-div">
-    <p class="text">This website was hard coded with the purpose of a fun side project where I could learn the basics of web development whilst documenting my progress in growing dragon fruit in Perth, Western Australia. However, after innumerable
+    <p class="text" id="overview">This website was hard coded with the purpose of a fun side project where I could learn the basics of web development whilst documenting my progress in growing dragon fruit in Perth, Western Australia. However, after
+      innumerable
       revisions and
       additions, I have a new goal for my website in creating the most reliable and organised collection of dragon fruit growing information. Dragon fruit are rapidly growing in popularity, both as a fruit and garden staple, and with this
       surge of popularity comes a wave of misinformation about the different varieties and how to grow them. Many named varieties are sold incorrectly, or have a multitude of names, which leads to great confusion in the dragon fruit community,
       whilst
       new varieties are constantly being created, complicating matters further. I hope to alleviate this confusion at least in the varieties I grow by giving a detailed analysis of how each variety grows, buds, flowers, fruits, and tastes,
       including
-      all alternate names I am aware of. My growing collection currently consists of eighteen named varieties which can be viewed below, one unnamed red-fleshed variety (unlisted), and one potential hybrid (unlisted for now).
+      all alternate names I am aware of. My growing collection currently consists of thirty named varieties which can be viewed below, one unnamed red-fleshed variety (unlisted), and one potential hybrid (unlisted for now).
       I have also included a detailed explanation of how to grow dragon fruit, organised into logical pages, which can be found under the respective drop-down menu
       above.
-      The analysis section addresses some of the environmental factors which affect dragon fruit flowering, which may be of interest if you are looking to maximise production in your specific location. I have many other plans to expand and improve
-      this
-      website, including extending it to other fruits, though dragon fruit will remain the most important part of the website of course. In any case, I hope you find my website useful!</p>
-    <p class="read-more">... read more</p>
+      The analysis section addresses some of the environmental factors which affect dragon fruit flowering, which may be of interest if you are looking to maximise production in your specific location. The final dropdown menu outlines some of my
+      other related interests, such as growing other fruits and dragon fruit recipes. In any case, I hope you find my website useful!</p>
+    <br>Note: scientific and other names are mostly based off the information on the <a href="https://spicyexotics.com/" target="_blank">Spicy Exotics</a> website.
+    <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
   </div>
 
   <!-- database of dragon fruit varieties -->
@@ -159,7 +173,7 @@
           <a href="varieties/pink-panther.html">
             <img id="theImage5" src="varieties/Variety Photos/Pink Panther/Pink Panther - Fruit 4.jpg" alt="Pink Panther dragon fruit picture">
           </a>
-          <p>Pink Panther<br><i>H. guatemalensis &times H. setaceus</i></p>
+          <p>Pink Panther<br><i>H. guatemalensis &times setaceus</i></p>
         </div>
       </li>
 
@@ -168,25 +182,25 @@
           <a href="varieties/cosmic-charlie.html">
             <img id="theImage6" src="varieties/Variety Photos/Cosmic Charlie/Cosmic Charlie - Fruit 4.jpg" alt="Cosmic Charlie dragon fruit picture">
           </a>
-          <p>Cosmic Charlie<br><i>H. guatemalensis &times H. undatus</i></p>
-        </div>
-      </li>
-
-      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
-        <div class="content">
-          <div class="coming">
-            <div class="inside">Picture coming soon (hopefully)</div>
-          </div>
-          <p>American Beauty<br><i>Hylocereus guatemalensis</i></p>
+          <p>Cosmic Charlie<br><i>H. guatemalensis &times undatus</i></p>
         </div>
       </li>
 
       <li class="column filterDiv Red-Flesh Pink-Skin  White-Flower Self-Fertile Paul-Thomson">
         <div class="content">
-          <div class="coming">
-            <div class="inside">Picture coming soon (hopefully)</div>
-          </div>
-          <p>Sugar Dragon<br><i>H. guatemalensis &times H. setaceus</i></p>
+          <a href="varieties/sugar-dragon.html">
+            <img id="theImage7" src="varieties/Variety Photos/Sugar Dragon/Sugar Dragon - Fruit 4.jpg" alt="Sugar Dragon dragon fruit picture">
+          </a>
+          <p>Sugar Dragon<br><i>H. guatemalensis &times setaceus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Pink-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <a href="varieties/american-beauty.html">
+            <img id="theImage8" src="varieties/Variety Photos/American Beauty/American Beauty - Fruit 4.jpg" alt="Cosmic Charlie dragon fruit picture">
+          </a>
+          <p>American Beauty<br><i>Hylocereus guatemalensis</i></p>
         </div>
       </li>
 
@@ -204,7 +218,7 @@
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Purple Haze<br><i>H. guatemalensis &times H. undatus</i></p>
+          <p>Purple Haze<br><i>H. guatemalensis &times undatus</i></p>
         </div>
       </li>
 
@@ -213,7 +227,7 @@
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Physical Graffiti<br><i>H. guatemalensis &times H. undatus</i></p>
+          <p>Physical Graffiti<br><i>H. guatemalensis &times undatus</i></p>
         </div>
       </li>
 
@@ -258,7 +272,7 @@
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Connie Mayer<br><i>H. guatemalensis &times H. stenopterus</i></p>
+          <p>Connie Mayer<br><i>H. stenopterus &times undatus</i></p>
         </div>
       </li>
 
@@ -285,7 +299,7 @@
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Delight<br><i>H. guatemalensis &times H. undatus</i></p>
+          <p>Delight<br><i>H. guatemalensis &times undatus</i></p>
         </div>
       </li>
 
@@ -294,7 +308,7 @@
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>White Sapphire<br><i>H. undatus &times</i></p>
+          <p>White Sapphire<br><i>Hylocereus undatus &times</i></p>
         </div>
       </li>
 
@@ -303,14 +317,93 @@
           <div class="coming">
             <div class="inside">Picture coming soon (hopefully)</div>
           </div>
-          <p>Ax<br><i>H. guatemalensis &times H. stenopterus</i></p>
+          <p>Ax<br><i>H. guatemalensis &times stenopterus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Purple-Skin Purple-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Asunta 5<br><i>H. guatemalensis &times stenopterus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Red-Flesh Purple-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Tricia<br><i>H. ocamponis &times undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Red-Flesh Purple-Skin White-Flower Self-Sterile Paul-Thomson">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Paul Thomson #7<br><i>Hylocereus ocamponis</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv White-Flesh Purple-Skin White-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Baby Cerrado<br><i>Selenicereus setaceus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Purple-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Desert King<br><i>S. megalanthus &times H. polyrhizus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Purple-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Orange Giant<br><i>Selenicereus megalanthus &times</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Purple-Skin White-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Chameleon<br><i>Hylocereus undatus &times</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Pink-Flesh Purple-Skin White-Flower Self-Sterile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Kathie Van Arum<br><i>H. stenopterus &times undatus</i></p>
+        </div>
+      </li>
+
+      <li class="column filterDiv Purple-Flesh Purple-Skin White-Flower Self-Fertile">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Taiwan Red<br><i>Hylocereus polyrhizus</i></p>
         </div>
       </li>
     </ul>
   </div>
 </div>
-
-<script src="/assets/js/search.js"></script>
 
 	<!-- Footer -->
     <footer>

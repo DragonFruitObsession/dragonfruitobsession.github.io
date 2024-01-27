@@ -40,10 +40,11 @@
 
 <nav class="navbar">
   <a href="/" class="nav" id="home">HOME</a>
-  <a href="/analysis/data-analysis.html" class="nav" id=analysis>DATA ANALYSIS</a>
-  <div class="dropdown nav" id="how-to-grow">
-    <button class="dropbtn">HOW TO GROW <i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
+  <a href="/analysis/data-analysis.html" class="nav" id="analysis">DATA ANALYSIS</a>
+
+  <div class="dropdown nav" onclick="toggler1()" id="how-to-grow">
+    <button class="dropbtn dropdown outside1a">HOW TO GROW <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content outside1b" id="toggle-content1">
       <a href="/how-to-grow/basic-care/basic-care.html">Basic Care</a>
       <a href="/how-to-grow/propagation/propagation.html">Propagation</a>
       <a href="/how-to-grow/trellising-and-pruning/trellising-and-pruning.html">Trellising and Pruning</a>
@@ -51,8 +52,19 @@
     </div>
   </div>
 
-  <a href="/other-fruit/other-fruit.html" class="nav" id="other-fruit">OTHER FRUIT</a>
+
+  <div class="dropdown nav" onclick="toggler2()" id="more">
+    <button class="dropbtn dropdown">MORE <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content" id="toggle-content2">
+      <a href="/more/other-fruit/other-fruit.html">Other Fruit</a>
+      <a href="/more/recipes/recipes.html">Recipes</a>
+      <a href="/more/origami/origami.html">Origami</a>
+    </div>
+  </div>
 </nav>
+
+
+<script src="/assets/js/search.js"></script>
 
 
     <!-- Content -->
@@ -72,7 +84,7 @@
           </div>
           <div class="fruit-top">
             <img src="Variety Photos/Jade Red/Jade Red - Fruit 4.jpg" alt="Jade Red dragon fruit halved" class="double">
-            <img src="Variety Photos/Jade Red/Jade Red - Fruit 3.jpg" alt="Jade Red dragon fruit halved" class="double">
+            <img src="Variety Photos/Jade Red/Jade Red - Fruit 3.jpg" alt="Jade Red dragon whole" class="double">
           </div>
           <div class="description">
             <p><u>Other names:</u> Red Jade<br><u>Pollination:</u> <a href="../how-to-grow/pollination-and-harvest/pollination-and-harvest.html">self-sterile</a></p>

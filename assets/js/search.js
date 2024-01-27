@@ -17,6 +17,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Hide the read more if five lines or less
+function checkAndToggleReadMore() {
+  var contentElement = document.getElementById('overview');
+  var readMoreElement = document.getElementById('read-more');
+
+  // Check the line count
+  var lineCount = contentElement.getBoundingClientRect().height / parseFloat(getComputedStyle(contentElement).lineHeight);
+
+  // Show or hide "read more" based on the line count
+  if (lineCount > 5) {
+    readMoreElement.style.display = 'block';
+  } else {
+    readMoreElement.style.display = 'none';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initial check
+  checkAndToggleReadMore();
+
+  // Add event listener for window resize
+  window.addEventListener('resize', checkAndToggleReadMore);
+});
+
+
+
+
 function myFunction1() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
@@ -115,8 +142,21 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+function toggler1() {
+  document.getElementById("toggle-content1").classList.toggle("show2");
+}
 
+function toggler2() {
+  document.getElementById("toggle-content2").classList.toggle("show2");
+}
 
+function toggler3() {
+  document.getElementById("droppy2").classList.toggle("show2");
+}
+
+function toggler4() {
+  document.getElementById("droppy1").classList.toggle("show2");
+}
 
 
 // Change the display
@@ -126,7 +166,8 @@ function fruitInside() {
   document.getElementById("theImage3").src = "varieties/Variety Photos/Jade Red/Jade Red - Fruit 4.jpg";
   document.getElementById("theImage4").src = "varieties/Variety Photos/Malaysian Purple/Malaysian Purple - Fruit 4.jpg";
   document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Fruit 4.jpg";
-  document.getElementById("theImage6").src = "varieties/Variety Photos/Delight/Delight - Fruit 4.jpg";
+  document.getElementById("theImage6").src = "varieties/Variety Photos/Cosmic Charlie/Cosmic Charlie - Fruit 4.jpg";
+  document.getElementById("theImage7").src = "varieties/Variety Photos/Sugar Dragon/Sugar Dragon - Fruit 4.jpg";
 }
 
 function fruitOutside() {
@@ -135,7 +176,8 @@ function fruitOutside() {
   document.getElementById("theImage3").src = "varieties/Variety Photos/Jade Red/Jade Red - Fruit 3.jpg";
   document.getElementById("theImage4").src = "varieties/Variety Photos/Malaysian Purple/Malaysian Purple - Fruit 3.jpg";
   document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Fruit 3.jpg";
-  document.getElementById("theImage6").src = "varieties/Variety Photos/Delight/Delight - Fruit 3.jpg";
+  document.getElementById("theImage6").src = "varieties/Variety Photos/Cosmic Charlie/Cosmic Charlie - Fruit 3.jpg";
+  document.getElementById("theImage7").src = "varieties/Variety Photos/Sugar Dragon/Sugar Dragon - Fruit 3.jpg";
 }
 
 function fruitFlowers() {
@@ -144,5 +186,7 @@ function fruitFlowers() {
   document.getElementById("theImage3").src = "varieties/Variety Photos/Jade Red/Jade Red - Flower 3.jpg";
   document.getElementById("theImage4").src = "varieties/Variety Photos/Malaysian Purple/Malaysian Purple - Flower 3.jpg";
   document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Flower 3.jpg";
-  document.getElementById("theImage6").src = "varieties/Variety Photos/Delight/Delight - Flower 3.jpg";
+  document.getElementById("theImage6").src = "varieties/Variety Photos/Cosmic Charlie/Cosmic Charlie - Flower 3.jpg";
+  document.getElementById("theImage7").src = "varieties/Variety Photos/Sugar Dragon/Sugar Dragon - Flower 3.jpg";
+
 }

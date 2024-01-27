@@ -181,13 +181,8 @@ img {
 
 .dropdown-content2 .sick-dropdown:hover {background-color: #ddd;}
 .dropdown-content2 .sick-dropdown:hover {background-color: #c0c0c0;}
-.dropdown2:hover .dropdown-content2 {display: block;}
 .dropdown2:hover .dropbtn2 {background-color: darkgrey;}
 
-.filterDiv {
-  float: right;
-  display: none;
-}
 
 .show {
   display: block;
@@ -263,4 +258,9 @@ img {
   .mobileonly {
     display: block;
   }
+}
+
+
+.other-fruit-content {
+  padding-top: 2.5%;
 }

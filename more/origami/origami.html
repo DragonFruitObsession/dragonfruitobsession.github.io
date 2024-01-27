@@ -1,0 +1,61 @@
+---
+layout: default
+title: Origami
+---
+
+<head>
+  <link href="origami.css" type="text/css" rel="stylesheet">
+</head>
+
+<h2 class="header">Origami</h2>
+<div class="content">
+  <p>Another keen interest of mine is origami, and on this page, I have extended this interest to my love of dragon fruits. They are certainly not common in origami, so I had to design all of these myself. Click on any of the pictures to reveal what
+    they are if you don’t already know.</p>
+
+    <div class="image-gallery">
+
+      <div class="container" onclick="toggleInformation(this)">
+        <img class="gallery-image" src="Dragon Fruit.jpg" alt="Dragon Fruit">
+        <div class="information-container">
+          Regular dragon fruit
+        </div>
+      </div>
+
+      <div class="container" onclick="toggleInformation(this)">
+        <img class="gallery-image" src="Dragon Fruit Cutting (without thorns).jpg" alt="Dragon Fruit Cutting (without thorns)">
+        <div class="information-container">
+          Dragon fruit cutting (without thorns)
+        </div>
+      </div>
+
+      <div class="container" onclick="toggleInformation(this)">
+        <img class="gallery-image" src="Palora Dragon Fruit (without thorns).jpg" alt="Palora Dragon Fruit (without thorns)">
+        <div class="information-container">
+          Palora dragon fruit (without thorns)
+        </div>
+      </div>
+
+      <div class="container" onclick="toggleInformation(this)">
+        <img class="gallery-image" src="Pixels.jpg" alt="Pixels (favicon for this website)">
+        <div class="information-container">
+          Pixels (favicon for this website)
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleInformation(container) {
+      var img = container.querySelector('.gallery-image');
+      var infoContainer = container.querySelector('.information-container');
+
+      if (img.style.display === 'none') {
+        img.style.display = 'block';
+        infoContainer.style.display = 'none';
+      } else {
+        img.style.display = 'none';
+        infoContainer.style.display = 'block';
+      }
+    }
+  </script>
