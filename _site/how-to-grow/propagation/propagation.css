@@ -6,6 +6,9 @@
   background-color: mediumvioletred;
 }
 
+.dropdown-fixer {
+  display: inline-grid; /* don't really know why this works (dropdown push down content) */
+}
 
 .image-right {
   width: 300px;

@@ -9,9 +9,11 @@
 
 .content {
   padding: 2.5% 5% 0% 5%;
-  display: inline-grid; /* don't really know why this works (dropdown push down content) */
 }
 
+.dropdown-fixer {
+  display: inline-grid; /* don't really know why this works (dropdown push down content) */
+}
 
 #analysis {
   background-color: mediumvioletred;
@@ -21,7 +23,8 @@
 .img-1 {
   width: 300px;
   height: auto;
-  padding-right: 2.5%;
+  padding-right: 5%;
+  padding-bottom: 1.25%;
   float: left;
 }
 
@@ -44,7 +47,7 @@
   display: inline-block;
   width: 50%;
   float: right;
-  padding: 2.5% 2.5% 0% 2.5%;
+  padding: 2.5% 2.5% 2.5% 5%;
 }
 
 .image-grid :nth-child(1) { order: 1; }

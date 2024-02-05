@@ -168,6 +168,7 @@ function fruitInside() {
   document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Fruit 4.jpg";
   document.getElementById("theImage6").src = "varieties/Variety Photos/Cosmic Charlie/Cosmic Charlie - Fruit 4.jpg";
   document.getElementById("theImage7").src = "varieties/Variety Photos/Sugar Dragon/Sugar Dragon - Fruit 4.jpg";
+  document.getElementById("theImage8").src = "varieties/Variety Photos/American Beauty/American Beauty - Fruit 4.jpg";
 }
 
 function fruitOutside() {
@@ -178,6 +179,8 @@ function fruitOutside() {
   document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Fruit 3.jpg";
   document.getElementById("theImage6").src = "varieties/Variety Photos/Cosmic Charlie/Cosmic Charlie - Fruit 3.jpg";
   document.getElementById("theImage7").src = "varieties/Variety Photos/Sugar Dragon/Sugar Dragon - Fruit 3.jpg";
+  document.getElementById("theImage8").src = "varieties/Variety Photos/American Beauty/American Beauty - Fruit 3.jpg";
+
 }
 
 function fruitFlowers() {
@@ -188,5 +191,7 @@ function fruitFlowers() {
   document.getElementById("theImage5").src = "varieties/Variety Photos/Pink Panther/Pink Panther - Flower 3.jpg";
   document.getElementById("theImage6").src = "varieties/Variety Photos/Cosmic Charlie/Cosmic Charlie - Flower 3.jpg";
   document.getElementById("theImage7").src = "varieties/Variety Photos/Sugar Dragon/Sugar Dragon - Flower 3.jpg";
+  document.getElementById("theImage8").src = "varieties/Variety Photos/American Beauty/American Beauty - Flower 3.jpg";
+
 
 }
