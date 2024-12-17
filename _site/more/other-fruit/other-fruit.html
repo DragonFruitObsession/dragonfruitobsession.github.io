@@ -86,24 +86,15 @@
     <p class="read-more" id="read-more">... read more</p>
   </div>
 
-  <!-- database of dragon fruit varieties -->
+  <!-- database of other fruit -->
   <div class="variety-database" id="myUL">
     <ul class="gallery">
       <li class="column">
         <div class="content">
-          <a href="/more/other-fruit/73-50.html">
-            <img id="theImage1" src="/more/other-fruit/Other Fruit Photos/73-50/73-50 - Fruit 4.jpg" alt="Pineapple picture">
+          <a href="/more/other-fruit/pineapple.html">
+            <img id="theImage1" src="/more/other-fruit/Other Fruit Photos/pineapple/pineapple - Fruit 4.jpg" alt="Pineapple halved">
           </a>
-          <p>Pineapple - 73-50<br><i>Ananas comosus</i></p>
-        </div>
-      </li>
-
-      <li class="column">
-        <div class="content">
-          <div class="coming">
-            <div class="inside">Picture coming soon (hopefully)</div>
-          </div>
-          <p>Loquat - Common<br><i>Eriobotrya japonica</i></p>
+          <p>Pineapple - Common<br><i>Ananas comosus</i></p>
         </div>
       </li>
 
@@ -160,6 +151,15 @@
           <p>Ice Cream Bean - Common<br><i>Inga edulis</i></p>
         </div>
       </li>
+
+      <li class="column">
+        <div class="content">
+          <div class="coming">
+            <div class="inside">Picture coming soon (hopefully)</div>
+          </div>
+          <p>Atemoya - Golden Emperor<br><i>A. squamosa &times A. cherimola</i></p>
+        </div>
+      </li>
     </ul>
   </div>
 </div>
@@ -179,6 +179,51 @@
     display: inline-grid; /* don't really know why this works (dropdown push down content) */
   }
 </style>
+
+<script>
+  // read more
+  document.addEventListener('DOMContentLoaded', function() {
+    var content = document.querySelector('.read-more-div');
+    var readMore = document.querySelector('.read-more');
+
+    readMore.addEventListener('click', function(e) {
+      e.preventDefault();
+      content.classList.toggle('open');
+
+      if (content.classList.contains('open')) {
+        content.style.maxHeight = 'none';
+        readMore.textContent = 'read less';
+      } else {
+        content.style.maxHeight = '5.5em'; // Adjust to match your CSS max-height
+        readMore.textContent = '... read more';
+      }
+    });
+  });
+
+  // Hide the read more if five lines or less
+  function checkAndToggleReadMore() {
+    var contentElement = document.getElementById('overview');
+    var readMoreElement = document.getElementById('read-more');
+
+    // Check the line count
+    var lineCount = contentElement.getBoundingClientRect().height / parseFloat(getComputedStyle(contentElement).lineHeight);
+
+    // Show or hide "read more" based on the line count
+    if (lineCount > 5) {
+      readMoreElement.style.display = 'block';
+    } else {
+      readMoreElement.style.display = 'none';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initial check
+    checkAndToggleReadMore();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', checkAndToggleReadMore);
+  });
+</script>
 
 	<!-- Footer -->
     <footer>

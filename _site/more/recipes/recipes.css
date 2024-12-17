@@ -6,9 +6,15 @@
   background-color: mediumvioletred;
 }
 
-.recipes {
-  width: 50%;
+.flexy {
+  display: flex;
+  column-gap: 5%;
 }
+
+.column {
+  flex: 50%;
+}
+
 .container {
   width: 100%;
   padding-left: 5%;
@@ -42,13 +48,13 @@ img {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .image-right,.image-left {
     width: 100%;
     padding: 0% 0% 5% 0%;
   }
 
-  .recipes {
-    width: 100%;
+  .flexy {
+    display: block;
   }
 }

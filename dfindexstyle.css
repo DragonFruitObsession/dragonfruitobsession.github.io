@@ -1,3 +1,12 @@
+.filterDiv {
+  display: none;
+}
+
+.btn2.active {
+  background-color: mediumvioletred;
+}
+
+
 * {
   box-sizing: border-box;
 }
