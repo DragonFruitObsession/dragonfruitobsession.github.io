@@ -20,6 +20,7 @@ hr {
   float: right;
   padding-left: 5%;
   padding-bottom: 2.5%;
+  padding-top: 1.25%;
 }
 
 .image-left {
@@ -27,6 +28,7 @@ hr {
   float: left;
   padding-right: 5%;
   padding-bottom: 2.5%;
+  padding-top: 1.25%;
 }
 
 img {
