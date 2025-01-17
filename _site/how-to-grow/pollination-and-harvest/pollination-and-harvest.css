@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+.red {
+  color: red;
+}
 img {
   border: 2px solid white;
 }
