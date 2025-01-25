@@ -4,76 +4,323 @@ title: Data Analysis
 ---
 
 <head>
-    <link href="analysis.css" type="text/css" rel="stylesheet">
+  <link href="analysis.css" type="text/css" rel="stylesheet">
 </head>
 
-  <div class="content">
-    <h2 class="dropdown-fixer">Dragon Fruit Data Analysis</h2>
-    <p>The purpose of this page is to provide an insight into what makes dragon fruit plants start flowering and fruiting, as this is the main reason for growing them. Over the past few years, I have recorded every dragon fruit flower upon opening,
-      although it was not until the season of 2020/21 that I had enough flowers to really see any correlation between weather and flowering times. I chose the opening of dragon fruit flowers as the basis for my data, as dragon fruit flowers only open
-      once and for one night, so this can be measured with perfect accuracy, as opposed to buds or new growths which can easily be missed when too small and sometimes abort or get eaten by bugs. From bud to flower is about three weeks, so we need to
-      imagine the trend translated back by more than three weeks to determine the cause of initial budding. However, it is long known that plants can somewhat predict future weather, based of changes in the current weather, so there may be
-      correlations between weather conditions and flowering itself. Such changes in current weather are of most interest to me, as this could allow me to better care for my dragon fruits plants in relation to what is ahead, allowing me to maximise
-      production.</p>
-    <img src="Flower Graphs/Monthly Flowers.jpeg" alt="Graph of all monthly flowers" class="img-1">
-    <p>The graph to the left (or above, depending on your device) gives you a general impression of my fruiting season. I live in Perth, Western Australia, which is in the Southern hemisphere, so Winter goes from June to August with the Winter
-      Solstice on June 21, Spring from September to November, Summer from December to February with the Summer Solstice on December 21, and Autumn from March to May. During Winter, my dragon fruit plants grow very slowly, but do not have to face any
-      frost due to my location. However, cactus rust does seem to spread during this time. When it begins to warm up in Spring, my dragon fruit plants spring to life putting on lots of new growth before they begin fruit production in Summer. As you
-      can see, my earliest dragon fruit flowers occurred December and the latest in April, with the most flowers occurring during Summer. The hot weather seems to get rid of the cactus rust and many of the bugs that arrive in Spring, and the plants
-      appear much healthier so long as they are protected from the sun and are well-watered and fertilised. </p>
-    <p>Whatever the season, I cannot control the weather. However, I can control the amount of water, fertiliser, shading, and pruning I give them. Hopefully the following analysis provides some insight into the correlation between dragon fruit
-      flowering and the weather, so the factors we can change can be controlled accordingly to try and extend the dragon fruit season both ways. I will be focussing on temperature, solar exposure, and rainfall, after no correlation at all to moon
-      phases in the season of 2020/21. All weather data is taken from the <a href="http://www.bom.gov.au/climate/data-services/station-data.shtml" target="_blank">Australian Bureau of Meteorology Website<a>.</p>
+<div class="content">
+  <h2 class="dropdown-fixer">Dragon Fruit Data Analysis</h2>
+  <p>The purpose of this page is to see if there is any correlation between weather conditions and dragon fruit budding and flowering. This could give growers a better insight into what care is required throughout each part of the season to maximise
+    production. To do this, I recorded the number of dragon fruit flowers that opened each night for four consecutive seasons (across a six-month period), from 2020-21 to 2023-24. While buds are closer to any potential causes, they can be difficult
+    to spot when they first
+    appear and some of them will inevitably abort if there is a large flush. The opening of flowers (which do so for only one night) can be recorded with perfect accuracy, and I reasoned that tracing the data back by three weeks would yield a
+    reasonable representation of bud appearance, as this is the typical time from bud to flower opening. Going back a little further might reveal possible causes, such as an increase in temperature or dryness. Further, there is the possibility that
+    dragon fruit plants can somewhat “predict” the weather around the time of flower opening, so perhaps they bud such that there is a drop in the temperature or an increase in rainfall in a few weeks’ time. All these things can be tested with the
+    recording of flower openings.</p>
+  <img src="Flower Graphs/Monthly Flowers.jpeg" alt="Graph of all monthly flowers" class="img-1">
+  <p>The graph to the left (or above, depending on your device) gives you an idea of what my fruiting season looks like – it displays the average number of flowers each month over the four seasons I recorded flower openings. I live in Perth, Western
+    Australia, which is in the southern hemisphere, so winter goes from June to August with the winter solstice on June 21, spring from September to November, summer from December to February with the summer solstice on December 21, and autumn from
+    March to May. During winter, my dragon fruit plants grow very slowly, but do not have to face any frost due to my location. However, cactus rust does seem to spread during this time. When it begins to warm up in spring, my dragon fruit plants
+    come back to life putting on lots of new growth before they begin fruit production in late spring/early summer. As you can see, my earliest dragon fruit flowers occur around November and the latest around April, with the most flowers occurring
+    during the summer period. The hot weather seems to get rid of the cactus rust and many of the bugs that arrive in spring, and the plants appear much healthier so long as they are protected from the sun and are well-watered and fertilised.</p>
+  <p>Whatever the season, I cannot control the weather. However, I can control the amount of water, fertiliser, shading, and pruning I give them, as well as when I do these things. Hopefully the following analysis provides some insight into the
+    correlation between dragon fruit flowering and the weather, so the factors we can change can be controlled accordingly to try and extend the dragon fruit season both ways. I will be focussing on temperature, solar exposure, and rain, with a quick
+    look at moon phases to see if this is more than an urban myth. Please note there are countless other factors that could affect dragon fruit budding and fruiting, but these are things I can easily find data for. There is also the possibility that
+    budding is mostly a response to when I put out potash, though clearly this only works in the right season so there must be some element of the weather contributing as well. All weather data was taken from the <a
+      href="http://www.bom.gov.au/climate/data-services/station-data.shtml" target="_blank">Australian Bureau of Meteorology Website<a>, and the data for the moon phases was taken from the <a
+          href="https://www.perthobservatory.com.au/astronomy/sun-and-moon-tables" target="_blank">Perth Observatory</a> and converted into a sinusoidal wave by myself.</p>
 
-    <div class="buttons">
-      <button id="button-2021" onclick="AltImage21()">2020/21</button>
-      <button id="button-2022" onclick="AltImage22()">2021/22</button>
+  <div class="buttons">
+    <button id="button-2021" onclick="AltImage21()">2020/21</button>
+    <button id="button-2022" onclick="AltImage22()">2021/22</button>
+    <button id="button-2023" onclick="AltImage23()">2022/23</button>
+    <button id="button-2024" onclick="AltImage24()">2023/24</button>
 
-      <div class="image-grid" id="graphs-2021" onresize="FixResizingIssue()">
-        <img src="Flower Graphs/2021/Flowers vs Temperature (2021).jpeg" alt="Flowers vs Temperature" class="figure">
-        <p class="figure">Figure 1</p>
-        <img src="Flower Graphs/2021/Flowers vs Solar Exposure (2021).jpeg" alt="Flowers vs Solar Exposure" class="figure">
-        <p class="figure">Figure 2</p>
-        <img src="Flower Graphs/2021/Flowers vs Rainfall (2021).jpeg" alt="Flowers vs Rainfall" class="figure">
-        <p class="figure">Figure 3</p>
-        <img src="Flower Graphs/2021/Flowers vs Moon Phases (2021).jpeg" alt="Flowers vs Moon Phases" class="figure">
-        <p class="figure">Figure 4</p>
+    <div class="image-grid" id="graphs-2021" onresize="FixResizingIssue()">
+      <img src="Flower Graphs/20-21/Flowers vs Temp 20-21.jpeg" alt="Flowers vs Temperature 2020/21" class="figure">
+      <img src="Flower Graphs/20-21/Flowers vs Solar 20-21.jpeg" alt="Flowers vs Solar Exposure 2020/21" class="figure">
+      <img src="Flower Graphs/20-21/Flowers vs Rain 20-21.jpeg" alt="Flowers vs Rain 2020/21" class="figure">
+      <img src="Flower Graphs/20-21/Flowers vs Moon 20-21.jpeg" alt="Flowers vs Moon Phases 2020/21" class="figure">
+    </div>
+
+    <div class="image-grid" id="graphs-2022" onresize="FixResizingIssue()">
+      <img src="Flower Graphs/21-22/Flowers vs Temp 21-22.jpeg" alt="Flowers vs Temperature 2021/22" class="figure">
+      <img src="Flower Graphs/21-22/Flowers vs Solar 21-22.jpeg" alt="Flowers vs Solar Exposure 2021/22" class="figure">
+      <img src="Flower Graphs/21-22/Flowers vs Rain 21-22.jpeg" alt="Flowers vs Rain 2021/22" class="figure">
+      <img src="Flower Graphs/21-22/Flowers vs Moon 21-22.jpeg" alt="Flowers vs Moon Phases 2021/22" class="figure">
+    </div>
+
+    <div class="image-grid" id="graphs-2023" onresize="FixResizingIssue()">
+      <img src="Flower Graphs/22-23/Flowers vs Temp 22-23.jpeg" alt="Flowers vs Temperature 2022/23" class="figure">
+      <img src="Flower Graphs/22-23/Flowers vs Solar 22-23.jpeg" alt="Flowers vs Solar Exposure 2022/23" class="figure">
+      <img src="Flower Graphs/22-23/Flowers vs Rain 22-23.jpeg" alt="Flowers vs Rain 2022/23" class="figure">
+      <img src="Flower Graphs/22-23/Flowers vs Moon 22-23.jpeg" alt="Flowers vs Moon Phases 2022/23" class="figure">
+    </div>
+
+    <div class="image-grid" id="graphs-2024" onresize="FixResizingIssue()">
+      <img src="Flower Graphs/23-24/Flowers vs Temp 23-24.jpeg" alt="Flowers vs Temperature 2023/24" class="figure">
+      <img src="Flower Graphs/23-24/Flowers vs Solar 23-24.jpeg" alt="Flowers vs Solar Exposure 2023/24" class="figure">
+      <img src="Flower Graphs/23-24/Flowers vs Rain 23-24.jpeg" alt="Flowers vs Rain 2023/24" class="figure">
+      <img src="Flower Graphs/23-24/Flowers vs Moon 23-24.jpeg" alt="Flowers vs Moon Phases 2023/24" class="figure">
+    </div>
+
+    <div class="data">
+      <div class="table-container">
+        <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;'>
+          <thead>
+            <tr>
+              <th>2020-21</th>
+              <th>avg</th>
+              <th>w_avg</th>
+              <th>fw_avg</th>
+              <th>bw_avg</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style='text-align: left;'>max</td>
+              <td><mark class="green">29.29</mark></td>
+              <td>31.69</td>
+              <td><mark>33.63</mark></td>
+              <td>33.03</td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>min</td>
+              <td><mark class="green">15.66</mark></td>
+              <td>18.29</td>
+              <td>17.73</td>
+              <td><mark>18.40</mark></td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>solar</td>
+              <td><mark class="green">23.38</mark></td>
+              <td>24.55</td>
+              <td>26.55</td>
+              <td><mark>27.51</mark></td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>rain</td>
+              <td><mark class="green">01.24</mark></td>
+              <td><mark>00.64</mark></td>
+              <td>00.14</td>
+              <td>00.58</td>
+            </tr>
+            <tr>
+              <td style='border-bottom: 2px solid grey; text-align: left;'>moon</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark class="green">00.50</mark></td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.76</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark>00.87</mark></td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.37</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
 
-      <div class="image-grid" id="graphs-2022" onresize="FixResizingIssue()">
-        <img src="Flower Graphs/2022/Flowers vs Temperature (2022).jpeg" alt="Flowers vs Temperature" class="figure">
-        <p class="figure">Figure 1</p>
-        <img src="Flower Graphs/2022/Flowers vs Solar Exposure (2022).jpeg" alt="Flowers vs Solar Exposure" class="figure">
-        <p class="figure">Figure 2</p>
-        <img src="Flower Graphs/2022/Flowers vs Rainfall (2022).jpeg" alt="Flowers vs Rainfall" class="figure">
-        <p class="figure">Figure 3</p>
-        <div>No longer testing.</div>
-        <div>Figure 4</div>
+      <div class="table-container">
+        <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;'>
+          <thead>
+            <tr>
+              <th>2021-22</th>
+              <th>avg</th>
+              <th>w_avg</th>
+              <th>fw_avg</th>
+              <th>bw_avg</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style='text-align: left;'>max</td>
+              <td><mark class="green">30.23</mark></td>
+              <td><mark>34.20</mark></td>
+              <td>34.10</td>
+              <td>32.81</td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>min</td>
+              <td><mark class="green">16.22</mark></td>
+              <td><mark>19.06</mark></td>
+              <td>18.61</td>
+              <td>17.78</td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>solar</td>
+              <td><mark class="green">24.38</mark></td>
+              <td>27.84</td>
+              <td>28.43</td>
+              <td><mark>29.38</mark></td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>rain</td>
+              <td><mark class="green">00.37</mark></td>
+              <td>00.00</td>
+              <td>00.04</td>
+              <td><mark>00.06</mark></td>
+            </tr>
+            <tr>
+              <td style='border-bottom: 2px solid grey; text-align: left;'>moon</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark class="green">00.50</mark></td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.45</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark>00.49</mark></td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.45</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;'>
+          <thead>
+            <tr>
+              <th>2022-23</th>
+              <th>avg</th>
+              <th>w_avg</th>
+              <th>fw_avg</th>
+              <th>bw_avg</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style='text-align: left;'>max</td>
+              <td><mark class="green">28.78</mark></td>
+              <td><mark>32.88</mark></td>
+              <td>31.72</td>
+              <td>31.23</td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>min</td>
+              <td><mark class="green">14.91</mark></td>
+              <td><mark>17.85<mark></td>
+              <td>16.83</td>
+              <td>15.71</td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>solar</td>
+              <td><mark class="green">24.19</mark></td>
+              <td>27.45</td>
+              <td>28.20</td>
+              <td><mark>29.73</mark></td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>rain</td>
+              <td><mark class="green">00.59</mark></td>
+              <td><mark>00.39</mark></td>
+              <td>00.12</td>
+              <td>00.00</td>
+            </tr>
+            <tr>
+              <td style='border-bottom: 2px solid grey; text-align: left;'>moon</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark class="green">00.50</mark></td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.31</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.36</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark>00.45</mark></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;'>
+          <thead>
+            <tr>
+              <th>2023-24</th>
+              <th>avg</th>
+              <th>w_avg</th>
+              <th>fw_avg</th>
+              <th>bw_avg</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style='text-align: left;'>max</td>
+              <td><mark class="green">31.37</mark></td>
+              <td>33.44</td>
+              <td><mark>34.23</mark></td>
+              <td>31.07</td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>min</td>
+              <td><mark class="green">16.81</mark></td>
+              <td>18.02</td>
+              <td><mark>18.75</mark></td>
+              <td>17.36</td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>solar</td>
+              <td><mark class="green">24.75</mark></td>
+              <td>27.12</td>
+              <td>28.09</td>
+              <td><mark>29.11</mark></td>
+            </tr>
+            <tr>
+              <td style='text-align: left;'>rain</td>
+              <td><mark class="green">00.10</mark></td>
+              <td>00.02</td>
+              <td>00.05</td>
+              <td><mark>00.06</mark></td>
+            </tr>
+            <tr>
+              <td style='border-bottom: 2px solid grey; text-align: left;'>moon</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark class="green">00.50</mark></td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.62</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'>00.46</td>
+              <td style='border-bottom: 2px solid grey; text-align: center;'><mark>00.66</mark></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+  </div>
 
-    <div>
-      <h3><u>Flowers vs Temperature (Figure 1)</u></h3>
-      <p>Other than more flowers during the warmer times of the year, there doesn’t appear to be a direct correlation between dragon fruit flowers and temperature. However, each peak in flowering seems to coincide with a drop in temperatures. This
-        makes sense, because flowers typically abort in extreme heat due to the high energy and water requirements that are needed to keep the plant alive during such times. This timing could be a way of limiting flower abortion and hence increasing
-        the chances of producing seeds, which is the purpose of the fruit in the first place. Further, flowers stay open longer in cooler temperatures, increasing the chance of pollination.</p>
-      <h3><u>Flowers vs Solar Exposure (Figure 2)</u></h3>
-      <p>There appears to be a consensus that dragon fruit flowers are linked to the amount of sunlight hours they receive each day, so much so that some farms put up lights to extend the growing season. I chose solar exposure because it measures the
-        amount of the sun’s energy that reaches the surface rather than sunlight hours which could prove inaccurate on cloudy days. In any case, there doesn’t appear to be a direct correlation between the two, however, the general trend of solar
-        exposure from high to low seems to support the successive flowering cycles. Like temperature, flowers seem to open during or just before drops in solar exposure, which are most likely for the same reasons.</p>
-      <h3><u>Flowers vs Rainfall (Figure 3)</u></h3>
-      <p>In the season of 2020/21, rainfall was the most promising of all factors tested, as it fit the flowering cycle almost perfectly in slight procession. This is probably due to similar reasons to temperature. The energy required to produce such
-        enormous blooms requires lots of water, so perhaps this is the plants’ way of making sure they survive the heat. The day or so lag can be explained by the need for dry weather when the flower is open, as excess water can wash away the pollen
-        making pollination harder, though they still often open when it’s raining in my experience. However, the season of 2021/22 was not so promising, mostly due to the lack of rainfall (compare the right-hand scale of the two graphs). For this
-        reason, I am not ruling rainfall out, and I look forward to analysing this trend in the coming years.</p>
-      <h3><u>Flowers vs Moon Phases (Figure 4)</u></h3>
-      <p>There seems to be some myth going around that dragon fruit flowers only open on a full moon, perhaps due to the increase in nocturnal pollinators. However, I think this idea stems from folklore rather than science, and after no obvious
-        correlation in the season of 2020/21, I have decided to discontinue this comparison.</p>
-      <h3><u>Conclusion</u></h3>
-      <p>Of course, I have only done the very basics in analysing the trends between dragon fruit flowering and weather conditions, and much of my observations are purely speculative. However, I do believe that weather plays some part in the
-        promotion of dragon fruit flower buds, as I often spot dragon fruit plants in the neighbourhood that flower on the same night as mine, which would not have received the same fertilising as my plants. If we can better understand how weather
-        conditions affect our plants, it will allow us to better care for them to suit such conditions, and ultimately lead to better production, and perhaps the creation of even better cultivars.</p>
-    </div>
+  <div>
+    <h3><u>Method of Analysis</u></h3>
+    <p>The data was taken across the six-month period of November 1 to April 30. I chose to represent it in two formats: graphically to get a “feel” for any possible trends, and in table format to allow for some additional analysis and to put numbers
+      behind any possible trends. The graphs are hopefully reasonably intuitive, and the season can be switched by clicking the respective buttons above the graphs. The tables require a little more explanation. There is one for each season, each
+      summarising the data from its four corresponding graphs. The row-headings “max” and “min” refer to the daily maximum and minimum temperatures (in degrees C), “solar” to the daily solar exposure (in MJ/m^2), “rain” to the daily rainfall (in mm),
+      and “moon” to the daily phase of the moon, with “0” corresponding to a new moon and “1” corresponding to a full moon. The first column, “avg”, is simply the average of each of these quantities across the six-month period, with the moon phase
+      average fixed at 0.5. While this provides a nice baseline for comparison, it makes its way into the cooler and wetter seasons which naturally distorts some of the values, which is why I have highlighted them in green. The second column,
+      “w_avg”, refers to the weighted average of the weather condition based on the number of flowers each day. The third column, “fw_avg”, refers to the weighted average of the weather conditions the week before each flower. The fourth column,
+      “bw_avg”, refers to the weighted average of the weather conditions approximately one week before each bud (from four to three weeks before opening). Values highlight in yellow are the highest in their row, disregarding the first column, with
+      the hope of making any patterns easier to spot.</p>
+    <h3><u>Flowers vs Temperature</u></h3>
+    <p>Other than more flowers during the warmer times of the year, there doesn’t appear to be a direct correlation between dragon fruit flowers and temperature. This is probably because temperature is a measure of the average kinetic energy of
+      particles, not the amount of sunlight received (which could potentially lead to more photosynthesis and thus more energy for bud production). If anything, the temperature seems to drop a little before the formation of buds, which is evident in
+      the latter three seasons. If there is anything to this, I’d suspect that perhaps when the plants are given a bit of respite, they have more energy reserves to produce buds. However, this seems contradictory when I consider that often buds seem
+      to appear as a response to stress, such as mild sun burn or pruning. Perhaps further study could enlighten the situation, but as you’ll see solar exposure seems to offer a much better insight than temperature, and negates the “respite” theory.
+    </p>
+    <h3><u>Flowers vs Solar Exposure</u></h3>
+    <p>There appears to be a consensus that dragon fruit budding is linked to the amount of sunlight hours received each day, so much so that some farms put up lights to extend the fruiting season. Solar exposure is closely linked to sunlight hours,
+      measuring the amount of the Sun’s energy that reaches the surface per unit area. This last part is important, because unlike temperature, which is not concerned with cloud cover, solar exposure is an accurate representation of how much energy
+      each plant is receiving (not just “feeling”) on a given day. Solar exposure has by far the most obvious trend in my data, and the trend is identical across all four seasons. The week preceding bud formation experiences measurably higher solar
+      exposure than the week preceding flower opening, which experiences measurably higher solar exposure than the day of the flower opening itself. You can clearly see this drop on some of the graphs. This suggests that perhaps budding is triggered
+      by an increase in solar exposure, which is interesting if we consider temperature might have suggested otherwise, though the two are certainly not equivalent. In any case, solar exposure is the more important condition as it considers cloud
+      cover, and this could account for the difference. It also leaves open the possibility that dragon fruit plants can “predict” a decrease in solar exposure around the time of flowering, perhaps even on the day of flowering, which makes sense
+      given that flowering takes a lot of energy. Of course, correlation does not mean causation, and looking at the graphs, solar exposure appears a little less “random” than temperature in that it naturally follows a bit of a curve, peaking around
+      the summer solstice. But the large dips could easily throw the trend off somewhere across the four seasons, and this curve might be part of the cause anyway. Maybe the summer solstice is the cause of the biggest flush of buds. Regardless, it is
+      safe to say there is a strong indication that solar exposure
+      is linked to budding and flowering.</p>
+    <h3><u>Flowers vs Rain</u></h3>
+    <p>While the graph of the season 2020/21 may look incredibly promising, with rain fitting the flowering cycle almost perfectly with a slight lag, this was not the case for the other seasons. In fact, I find it very difficult to discern any
+      pattern at all, particularly after tabulating the data. It seems that rain is as unpredictable as the forecasters (unknowingly) demonstrate, and this is complicated further when my hand-watering is considered. It would not be unlikely that my
+      dragon fruit plants interpret this as “rain”, though of course this could not be predicted like, potentially, the water direct from the clouds. Another issue with using rainfall for my analysis is that Perth just doesn’t rain very much over the
+      summer period. It seems unlikely that flowers would wait out until the usually very minimal and spaced-out periods of rainfall. Perhaps if this study was conducted in a more tropical area, a correlation might start to appear. But of course, its
+      seemingly random nature might render the same results. In any case, if it can’t be easily predicted then it’s not much use in dictating how I care for my dragon fruit plants, particularly over the length of an entire season.</p>
+    <h3><u>Flowers vs Moon Phases</u></h3>
+    <p>There seems to be a notion going around that dragon fruit flowers usually open around a full moon, perhaps due to the increase in nocturnal pollinators with the extra light. While this may be true for some species of cacti (see <a
+        href="https://pubmed.ncbi.nlm.nih.gov/27030087/" target="_blank">here</a>), I couldn’t find any direct evidence for dragon fruit, so I was interested to have a look myself. Like rainfall, the 2020-21 graph looks promising, with flowers
+      fitting
+      inside the “moon wave”. However, the other seasons do not show the same trends, and the tabulated data is even less clear, with some of the data points above and some below the standard average of 0.5. Even if there was some faint link between
+      flowering and the lunar cycle, it seems unlikely that it would hold much of a bearing against other more obvious weather conditions. As such, I am confident that there appears to be no correlation between dragon fruit flowering and moon phases,
+      so it would be best to focus on other areas for maximising production.</p>
+    <h3><u>Conclusion</u></h3>
+    <p>I often spot dragon fruit plants in the neighbourhood that flower on the same night as mine, subject to different fertilising and watering schedules, different positioning and shading. Could certain weather conditions play a role in this? Of
+      course, I have only done the very basics in analysing the trends between dragon fruit budding and flowering and corresponding weather conditions, but there is at least one significant conclusion that can be drawn. This conclusion is that solar
+      exposure is more important than temperature as an environmental stimulus. For so long, I have let temperature dictate the amount of water, fertiliser, and shade I give my dragon fruit plants, but perhaps it would have been better if I gave the
+      reins to solar exposure. However, this is easier said than done. Daily solar exposure forecasts are not as easily obtainable as daily temperature forecasts, and it would take time to build up an intuition behind the values. Most people already
+      have this intuition with temperature, and know that 20-30 degrees C is mild, 30-35 degrees C is rather hot, and 35-40+ degrees C is quite awful. What about 7,694 W/m^2, the predicted value on the day of writing? Perhaps this intuition is worth
+      building, however, considering the consistency of the trend: high solar exposure before budding, then reduced solar exposure through to a low on the day of flowering. It may even be worth fitting your fertilising schedule around the summer
+      solstice which is typically the period of highest solar exposure. The other things I tested – rainfall and moon phases – seemed to have no correlation with dragon fruit budding and flowering and probably don’t need as much consideration.
+      However, there may be other weather conditions that have an effect. I didn’t test humidity, pressure, or wind, and I only tested in one location. There are so many variables, both weather-related and not weather-related, that could affect
+      dragon fruit budding and fruiting. But if we can find the major contributors, we can leverage this to maximise production. In any case, I hope fellow dragon fruit enthusiasts find this page interesting and useful.</p>
+  </div>
 
-<script src="analysis.js"></script>
+  <script src="analysis.js"></script>
