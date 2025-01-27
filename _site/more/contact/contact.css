@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+#more {
+  background-color: mediumvioletred;
+}
+
+.content {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%;
+}
+
+#donation-cards {
+  display: flex;
+}
+
+.cards {
+  width: 50%;
+}
+
+.img-1 {
+  width: 300px;
+  height: auto;
+  padding-left: 2.5%;
+  padding-bottom: 1.25%;
+  float: right;
+}
+
+@media screen and (max-width: 700px) {
+  .img-1 {
+    width: 100%;
+    padding: 0% 0% 5% 0%;
+  }
+
+  #donation-cards {
+    display: block;
+  }
+  
+  .cards {
+    width: 100%;
+  }
+}

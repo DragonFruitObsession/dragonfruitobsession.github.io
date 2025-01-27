@@ -112,10 +112,3 @@ td {
     padding: 0% 0% 5% 0%;
   }
 }
-
-
-
-/* overrides default values of <figure> */
-figure {
-  margin: 0%;
-}
