@@ -218,6 +218,9 @@ function fruitInside() {
   document.getElementById("theImage8").src = "varieties/Variety Photos/Purple Haze/Purple Haze - Fruit 4.jpg";
   document.getElementById("theImage9").src = "varieties/Variety Photos/Yellow Colombiana/Yellow Colombiana - Fruit 4.jpg";
   document.getElementById("theImage10").src = "varieties/Variety Photos/Thomson G2/Thomson G2 - Fruit 4.jpg";
+  document.getElementById("theImage11").src = "varieties/Variety Photos/Connie Mayer/Connie Mayer - Fruit 4.jpg";
+  document.getElementById("theImage12").src = "varieties/Variety Photos/Aussie Gold/Aussie Gold - Fruit 4.jpg";
+
 }
 
 function fruitOutside() {
@@ -231,6 +234,8 @@ function fruitOutside() {
   document.getElementById("theImage8").src = "varieties/Variety Photos/Purple Haze/Purple Haze - Fruit 3.jpg";
   document.getElementById("theImage9").src = "varieties/Variety Photos/Yellow Colombiana/Yellow Colombiana - Fruit 3.jpg";
   document.getElementById("theImage10").src = "varieties/Variety Photos/Thomson G2/Thomson G2 - Fruit 3.jpg";
+  document.getElementById("theImage11").src = "varieties/Variety Photos/Connie Mayer/Connie Mayer - Fruit 3.jpg";
+  document.getElementById("theImage12").src = "varieties/Variety Photos/Aussie Gold/Aussie Gold - Fruit 3.jpg";
 }
 
 function fruitFlowers() {
@@ -244,4 +249,6 @@ function fruitFlowers() {
   document.getElementById("theImage8").src = "varieties/Variety Photos/Purple Haze/Purple Haze - Flower 3.jpg";
   document.getElementById("theImage9").src = "varieties/Variety Photos/Yellow Colombiana/Yellow Colombiana - Flower 3.jpg";
   document.getElementById("theImage10").src = "varieties/Variety Photos/Thomson G2/Thomson G2 - Flower 3.jpg";
+  document.getElementById("theImage11").src = "varieties/Variety Photos/Connie Mayer/Connie Mayer - Flower 3.jpg";
+  document.getElementById("theImage12").src = "varieties/Variety Photos/Aussie Gold/Aussie Gold - Flower 3.jpg";
 }
