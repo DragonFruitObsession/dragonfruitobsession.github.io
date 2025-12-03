@@ -220,7 +220,8 @@ function fruitInside() {
   document.getElementById("theImage10").src = "varieties/Variety Photos/Thomson G2/Thomson G2 - Fruit 4.jpg";
   document.getElementById("theImage11").src = "varieties/Variety Photos/Connie Mayer/Connie Mayer - Fruit 4.jpg";
   document.getElementById("theImage12").src = "varieties/Variety Photos/Aussie Gold/Aussie Gold - Fruit 4.jpg";
-
+  document.getElementById("theImage13").src = "varieties/Variety Photos/Purple Megalanthus/Purple Megalanthus - Fruit 4.jpg";
+  document.getElementById("theImage14").src = "varieties/Variety Photos/Palora/Palora - Fruit 4.jpg";
 }
 
 function fruitOutside() {
@@ -236,6 +237,8 @@ function fruitOutside() {
   document.getElementById("theImage10").src = "varieties/Variety Photos/Thomson G2/Thomson G2 - Fruit 3.jpg";
   document.getElementById("theImage11").src = "varieties/Variety Photos/Connie Mayer/Connie Mayer - Fruit 3.jpg";
   document.getElementById("theImage12").src = "varieties/Variety Photos/Aussie Gold/Aussie Gold - Fruit 3.jpg";
+  document.getElementById("theImage13").src = "varieties/Variety Photos/Purple Megalanthus/Purple Megalanthus - Fruit 3.jpg";
+  document.getElementById("theImage14").src = "varieties/Variety Photos/Palora/Palora - Fruit 3.jpg";
 }
 
 function fruitFlowers() {
@@ -251,4 +254,6 @@ function fruitFlowers() {
   document.getElementById("theImage10").src = "varieties/Variety Photos/Thomson G2/Thomson G2 - Flower 3.jpg";
   document.getElementById("theImage11").src = "varieties/Variety Photos/Connie Mayer/Connie Mayer - Flower 3.jpg";
   document.getElementById("theImage12").src = "varieties/Variety Photos/Aussie Gold/Aussie Gold - Flower 3.jpg";
+  document.getElementById("theImage13").src = "varieties/Variety Photos/Purple Megalanthus/Purple Megalanthus - Flower 3.jpg";
+  document.getElementById("theImage14").src = "varieties/Variety Photos/Palora/Palora - Flower 3.jpg";
 }
