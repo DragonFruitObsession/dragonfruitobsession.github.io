@@ -224,6 +224,7 @@ function fruitInside() {
   document.getElementById("theImage14").src = "varieties/Variety Photos/Palora/Palora - Fruit 4.jpg";
   document.getElementById("theImage15").src = "varieties/Variety Photos/Ax/Ax - Fruit 4.jpg";
   document.getElementById("theImage16").src = "varieties/Variety Photos/Delight/Delight - Fruit 4.jpg";
+  document.getElementById("theImage17").src = "varieties/Variety Photos/Asunta 5/Asunta 5 - Fruit 4.jpg";
 }
 
 function fruitOutside() {
@@ -243,6 +244,7 @@ function fruitOutside() {
   document.getElementById("theImage14").src = "varieties/Variety Photos/Palora/Palora - Fruit 3.jpg";
   document.getElementById("theImage15").src = "varieties/Variety Photos/Ax/Ax - Fruit 3.jpg";
   document.getElementById("theImage16").src = "varieties/Variety Photos/Delight/Delight - Fruit 3.jpg";
+  document.getElementById("theImage17").src = "varieties/Variety Photos/Asunta 5/Asunta 5 - Fruit 3.jpg";
 }
 
 function fruitFlowers() {
@@ -262,4 +264,5 @@ function fruitFlowers() {
   document.getElementById("theImage14").src = "varieties/Variety Photos/Palora/Palora - Flower 3.jpg";
   document.getElementById("theImage15").src = "varieties/Variety Photos/Ax/Ax - Flower 3.jpg";
   document.getElementById("theImage16").src = "varieties/Variety Photos/Delight/Delight - Flower 3.jpg";
+  document.getElementById("theImage17").src = "varieties/Variety Photos/Asunta 5/Asunta 5 - Flower 3.jpg";
 }
