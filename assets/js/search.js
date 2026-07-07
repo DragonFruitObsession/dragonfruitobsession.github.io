@@ -226,6 +226,7 @@ function fruitInside() {
   document.getElementById("theImage16").src = "varieties/Variety Photos/Delight/Delight - Fruit 4.jpg";
   document.getElementById("theImage17").src = "varieties/Variety Photos/Blush/Blush - Fruit 4.jpg";
   document.getElementById("theImage18").src = "varieties/Variety Photos/Asunta 5/Asunta 5 - Fruit 4.jpg";
+  document.getElementById("theImage19").src = "varieties/Variety Photos/Baby Cerrado/Baby Cerrado - Fruit 4.jpg";
 }
 
 function fruitOutside() {
@@ -247,6 +248,7 @@ function fruitOutside() {
   document.getElementById("theImage16").src = "varieties/Variety Photos/Delight/Delight - Fruit 3.jpg";
   document.getElementById("theImage17").src = "varieties/Variety Photos/Blush/Blush - Fruit 3.jpg";
   document.getElementById("theImage18").src = "varieties/Variety Photos/Asunta 5/Asunta 5 - Fruit 3.jpg";
+  document.getElementById("theImage19").src = "varieties/Variety Photos/Baby Cerrado/Baby Cerrado - Fruit 3.jpg";
 }
 
 function fruitFlowers() {
@@ -268,4 +270,5 @@ function fruitFlowers() {
   document.getElementById("theImage16").src = "varieties/Variety Photos/Delight/Delight - Flower 3.jpg";
   document.getElementById("theImage17").src = "varieties/Variety Photos/Blush/Blush - Flower 3.jpg";
   document.getElementById("theImage18").src = "varieties/Variety Photos/Asunta 5/Asunta 5 - Flower 3.jpg";
+  document.getElementById("theImage19").src = "varieties/Variety Photos/Baby Cerrado/Baby Cerrado - Flower 3.jpg";
 }
