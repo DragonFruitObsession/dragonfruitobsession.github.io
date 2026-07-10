@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
@@ -9,129 +13,183 @@
 
 <url>
   <loc>https://dragonfruitobsession.github.io/</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/analysis/data-analysis.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/how-to-grow/basic-care/basic-care.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/how-to-grow/propagation/propagation.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/how-to-grow/trellising-and-pruning/trellising-and-pruning.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/how-to-grow/pollination-and-harvest/pollination-and-harvest.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/more/other-fruit/other-fruit.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/more/recipes/recipes.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/more/origami/origami.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/more/contact/contact.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/vietnam-white.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/colombian-supreme.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/jade-red.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/malaysian-purple.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/pink-panther.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/sugar-dragon.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/american-beauty.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/purple-haze.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/yellow-colombiana.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/thomson-g2.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/connie-mayer.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/aussie-gold.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/purple-megalanthus.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/varieties/palora.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/ax.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/delight.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/blush.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/asunta-5.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/baby-cerrado.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/chameleon.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/scotts-purple.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/taiwan-red.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragonfruitobsession.github.io/more/other-fruit/pineapple.html</loc>
-  <lastmod>2025-12-03T05:49:25+00:00</lastmod>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
+<url>
+  <loc>https://dragonfruitobsession.github.io/more/other-fruit/ducasse.html</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/colombian-supreme</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dragonfruitobsession.github.io/varieties/yellow-colombiana</loc>
+  <lastmod>2026-07-10T05:19:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 </urlset>
