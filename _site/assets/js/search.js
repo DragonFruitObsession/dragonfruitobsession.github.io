@@ -278,6 +278,6 @@ function fruitFlowers() {
   document.getElementById("theImage18").src = "varieties/Variety Photos/Asunta 5/Asunta 5 - Flower 3.jpg";
   document.getElementById("theImage19").src = "varieties/Variety Photos/Baby Cerrado/Baby Cerrado - Flower 3.jpg";
   document.getElementById("theImage20").src = "varieties/Variety Photos/Chameleon/Chameleon - Flower 3.jpg";
-  document.getElementById("theImage21").src = "varieties/Variety Photos/Scott's Purple/Scott's Purplse - Flower 3.jpg";
+  document.getElementById("theImage21").src = "varieties/Variety Photos/Scott's Purple/Scott's Purple - Flower 3.jpg";
   document.getElementById("theImage22").src = "varieties/Variety Photos/Taiwan Red/Taiwan Red - Flower 3.jpg";
 }
